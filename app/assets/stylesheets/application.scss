@@ -1,0 +1,23 @@
+// Components
+// Mixins
+@import "mixins/media";
+@import "mixins/width_and_height";
+
+// Configuration
+@import "config/variables";
+@import "config/reset";
+
+@import "components/button";
+@import "components/notifications";
+@import "components/form";
+@import "components/slider";
+@import "components/contact_form";
+
+// Layouts
+@import "layouts/header";
+@import "layouts/about";
+@import "layouts/section";
+@import "layouts/service";
+@import 'layouts/footer';
+@import 'layouts/service-show';
+@import 'layouts/dashboard';

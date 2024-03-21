@@ -1,0 +1,37 @@
+<header class="header" data-controller="humburger">
+  <div class="header__top">
+    <%= link_to root_path, class: "header__logo" do %>
+      <%= image_tag "Kamic.PNG", alt: "Logo" %>
+    <% end %>
+
+    <div class="menu-container">
+        <button data-action="click->humburger#toggle" class="btn-mobile-nav">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+   <nav>
+      <ul class="header__menu"  data-action="click->humburger#removenav">
+          <li>
+            <%= link_to 'Home', root_path, class: "header__menu__item" %>
+          </li>
+          
+          <li class="mega">
+            <%= link_to 'Service', ourservices_path, class: "header__menu__item" %>
+          </li>
+          <li class="mega">
+            <%= link_to 'Company', about_us_path, class: "header__menu__item" %>
+          </li>
+          <li>
+            <%= link_to 'Contact', contact_us_path, class: "header__menu__item" %>
+          </li>
+        <% if current_user %>
+          <%= link_to 'Dashboard', kashg_path, class: "btn--dash" %>
+          <%= button_to 'logout', logout_path, method: :delete, class: "btn--dash" %>
+          <% end %>
+        </ul>
+   </nav>
+</header>
