@@ -1,8 +1,18 @@
 <header class="header" data-controller="humburger">
   <div class="header__top">
-    <%= link_to root_path, class: "header__logo" do %>
-      <%= image_tag "Kamic.PNG", alt: "Logo" %>
-    <% end %>
+    <div class="header__contacts" %>
+        <span>
+        <i class="fa-solid fa-location-dot"></i> Kinondoni DSM, 1230 Tanzania
+        </span>
+        <span>
+        <i class="fa-solid fa-envelope"></i>
+         sales@hysan.co.tz
+        </span>
+        <span>
+        <i class="fa-solid fa-phone-volume"></i>
+        +(255) 0752443624
+        </span>
+    </div>
 
     <div class="menu-container">
         <button data-action="click->humburger#toggle" class="btn-mobile-nav">
@@ -15,6 +25,9 @@
   </div>
    <nav>
       <ul class="header__menu"  data-action="click->humburger#removenav">
+      <li>
+        <%= image_tag "Kamic.PNG", alt: "Logo" %>
+      </li>
           <li>
             <%= link_to 'Home', root_path, class: "header__menu__item" %>
           </li>
@@ -26,8 +39,13 @@
             <%= link_to 'Company', about_us_path, class: "header__menu__item" %>
           </li>
           <li>
-            <%= link_to 'Contact', contact_us_path, class: "header__menu__item" %>
+            <%= link_to 'Contact Us', contact_us_path, class: "header__menu__item" %>
           </li>
+
+          <li>
+            <%= link_to 'Enquery', contact_us_path, class: "header__menu__item" %>
+          </li>
+
         <% if current_user %>
           <%= link_to 'Dashboard', kashg_path, class: "btn--dash" %>
           <%= button_to 'logout', logout_path, method: :delete, class: "btn--dash" %>
