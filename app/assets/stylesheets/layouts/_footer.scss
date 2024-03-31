@@ -1,10 +1,10 @@
 footer {
     h3 {
-        color: $main-color;
+        color: $secondary-color;
     }
 }
 .interesting-infos {
-    background-color: #333;
+    background-color: $main-color;
     color: #fff;
     padding: 30px;
 }
@@ -36,13 +36,61 @@ footer {
     font-size: $font-size-xs;
 }
 
-.footer-bottom {
-    border-top: 1px solid #fff;
-    margin-top: 20px;
-    padding-top: 10px;
-    text-align: center;
-}
 
 .footer-section p {
     font-size: $font-size-xs;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsla(148, 94%, 62%, 0.867);
+    margin-bottom: 4rem;
+    padding: 2rem;
+
+    background-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%);
+    background-size: 140% 0.4rem; /* Adjust the thickness of the underline */
+    background-position: 100% 100%; /* Align the underline to the bottom */
+    background-repeat: no-repeat;
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+
+     .fa-message {
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding: 1rem;
+        border: 0.2rem solid $color-tertiary;
+     }
+
+     span {
+        font-size: 1rem;
+
+        a {
+            color: $color-tertiary;
+            font-size: 2rem;
+        }
+     }
+
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .empt {
+        height: 1px;
+        width: 40%;
+        background-color: rgba(255, 255, 255, 0.523);
+    }
+    a {
+        color: $color-tertiary;
+        font-size: 0.6rem;
+    }
 }
