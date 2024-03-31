@@ -16,7 +16,7 @@
                         <h5 class="service__title">
                             <%= service.Title %>
                         </h5>
-                        <p class="service__desc"><%= service.description %></p>
+                        <p class="service__desc"><%= truncate(service.description, length: 140, separator: '') %></p>
                     </div>
                 <% end %>
                 </div>
