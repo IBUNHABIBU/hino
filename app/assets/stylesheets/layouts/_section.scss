@@ -2,12 +2,12 @@
     width: 100%;
     height: 100%;
 
-    h1 {
-        font-weight: 700;
-        line-height: $line-height-body;
-        color: $color-text-section;
-        text-transform: uppercase;
-    }
+    // h1 {
+    //     font-weight: 700;
+    //     line-height: $line-height-body;
+    //     color: $color-text-section;
+    //     text-transform: uppercase;
+    // }
 
     .message {
         display: flex;
@@ -55,7 +55,7 @@
 
 .why {
     text-align: center;
-    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.622), rgba(34, 34, 34, 0.676), rgba(85, 85, 84, 0.776)), url('./techbg.jpg');
+    background-image: linear-gradient(to right bottom, rgba(0, 49, 129, 0.938), rgba(0, 49, 129, 0.944), rgba(0, 49, 129, 0.932)), url('./techbg.jpg');
     padding: 2rem;
     display: flex;
     flex-direction: column;

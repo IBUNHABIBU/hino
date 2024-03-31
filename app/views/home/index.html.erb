@@ -1,31 +1,28 @@
 <section class="section">
     <%= render 'slider' %>
-    <div class="message">
-        <h6>
-        The best technology company in Tanzania excels in innovation, offering cutting-edge solutions tailored to local needs.</h6>
-        <%= button_to 'Inquire Now', contact_us_path, method: :get, class:"btn btn--mob" %>
-    </div>
 </section>
 
 <div class="service" id='service'>
     <h4>OUR SERVICES</h4>
-    <div class="row">
-    <% @ourservices.each do |service| %>
-        <div class="desktop-4 tab-port-6 tab-land-6 phone-12">
+    <div class="service__container">
+        <div class="row">
+        <% @ourservices.each do |service| %>
+            <div class="desktop-3 tab-port-4 tab-land-6 phone-12">
         
-            <div class="service__item">
-            <%= link_to ourservices_path do %>
-                <%= image_tag service.image, class: "service__img" %>
-                <div class="service__content">
-                    <h5 class="service__title">
-                        <%= service.Title %>
-                    </h5>
-                    <p class="service__desc"><%= service.description %></p>
+                <div class="service__item">
+                <%= link_to ourservices_path do %>
+                      <%= image_tag service.image, class: "service__img" %>
+                    <div class="service__content">
+                        <h5 class="service__title">
+                            <%= service.Title %>
+                        </h5>
+                        <p class="service__desc"><%= service.description %></p>
+                    </div>
+                <% end %>
                 </div>
-            <% end %>
             </div>
+        <% end %>
         </div>
-    <% end %>
     </div>
 </div>
 

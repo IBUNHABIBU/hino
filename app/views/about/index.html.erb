@@ -26,7 +26,7 @@ Enlarging the business by varying our range of products, services and field of o
             <div class="desktop-6 phone-12 tab-port-6">
                 <div class="about_images">
                     <% @hero_images.each do |hero_image| %>
-                        <% images = hero_image.images.limit(2) %>
+                        <% images = hero_image.images.limit(1) %>
                         <% images.each do |image| %>
                             <%= image_tag image, class: "about__img" %>
                         <% end %>
