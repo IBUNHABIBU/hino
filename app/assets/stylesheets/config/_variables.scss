@@ -20,6 +20,11 @@
   $font-size-h3: 1.8rem;   // 18px
   $font-size-h4: 1.6rem;   // 16px
   $font-size-h6: 1.2rem;
+
+  $font-weight-light: 300;
+  $font-weight-normal: 400;
+  $font-weight-bold: 700;
+  
   
     // Three different text colors
   // $color-text-header: hsl(0, 1%, 16%);
@@ -29,9 +34,10 @@
   $color-text-section: hsl(207, 45%, 47%);
   $color-white: hsl(0, 0%, 100%);
   $color-input: #23242a;
-  $main-color: #001736;
-  $secondary-color: #fe7c00;
-  $color-tertiary:  #894106;
+  $main-color: #003281;
+  $title-color: #1c1c1c;
+  $secondary-color: #f58220;
+  $color-tertiary:  #01cd61;
   $form-bg: #0A81E3;
   $color-glint:            hsl(210, 100%, 82%);
   $color-white:      hsl(0, 0%, 100%);
