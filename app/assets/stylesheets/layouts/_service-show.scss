@@ -1,69 +1,74 @@
-// Define your styles for the show page here
-p.notice {
-    color: green;
-    font-size: 16px;
-  }
-  
-  .ourservice-details {
-    margin-top: 20px;
-  }
-  
-  .created-by {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .actions {
-    margin-top: 20px;
-  
-    .btn {
-      margin-right: 10px;
-      padding: 8px 16px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: #0056b3;
-      }
+.service-show {
+  // background-color: $secondary-color;
+  margin-bottom: 2rem;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+    height: 60vh;
+    -webkit-box-shadow: -1px 0px 7px -1px rgba(185, 185, 185, 0.75);
+    -moz-box-shadow: -1px 0px 7px -1px rgba(182, 182, 182, 0.75);
+    box-shadow: -1px 0px 7px -1px rgba(163, 163, 163, 0.75);
+    border-top: 0.1px solid rgba(229, 229, 229, 0.45);
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      height: 100vh;
     }
-  
-    .btn--danger {
-      background-color: #dc3545;
-  
-      &:hover {
-        background-color: #c82333;
-      }
+
+    h1 {
+      font-size: 24px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+      margin-top: 10px;
     }
   }
 
- // SCSS styles for ourservice-details using BEM
-.ourservice-details {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
+  &__img {
+    height: 100%;
 
-  &__title {
-    font-weight: bold;
-    margin-bottom: 5px; // Adding some space below the title
-    color: #000;
+    img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
   }
 
-  &__description {
-    margin-bottom: 10px;
-    color: #000;
+}
+
+.actions {
+  margin-top: 20px;
+
+  .btn {
+    margin-right: 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
   }
 
-  &__image-container {
-    margin-top: 10px;
+  .btn--danger {
+    background-color: #dc3545;
 
-    .ourservice-details__image {
-      max-width: 100%;
-      height: auto;
+    &:hover {
+      background-color: #c82333;
     }
   }
 }

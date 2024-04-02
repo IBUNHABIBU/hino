@@ -45,6 +45,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     border-bottom: 1px solid hsla(148, 94%, 62%, 0.867);
     margin-bottom: 4rem;
     padding: 2rem;
@@ -54,10 +56,24 @@ footer {
     background-position: 100% 100%; /* Align the underline to the bottom */
     background-repeat: no-repeat;
 
+    .social {
+        display: flex;
+        gap: 1rem;
+
+        .fa-facebook, .fa-twitter {
+            color: #fff;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: $color-tertiary;
+            }
+        }
+    }
     .contact {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        // flex-wrap: wrap;
         gap: 1rem;
 
      .fa-message {
