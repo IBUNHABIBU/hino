@@ -58,7 +58,6 @@
       }
 
       .form__submit {
-        background-color: #007bff;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -69,6 +68,27 @@
         &:hover {
           background-color: #0056b3;
         }
+      }
+
+      .main {
+        background-color: $main-color;
+      }
+
+      .sec {
+        background-color: $secondary-color;
+      }
+
+      .tertiary {
+        background-color: $color-tertiary;
+      
+      }
+
+      .f-1 {
+        font-size: 1rem;
+      }
+
+      .f-2 {
+        font-size: 1.6rem;
       }
     }
   }

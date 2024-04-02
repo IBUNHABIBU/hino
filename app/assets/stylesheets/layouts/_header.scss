@@ -1,3 +1,7 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
 .header {
     position: relative;
     max-width: 100vw;
@@ -7,14 +11,19 @@
     z-index: 1;
 
     &__top {
-        padding: 1rem;
+        padding: 0.6rem;
         display: flex;
         justify-content: space-between;
         background-color: transparent;
-        color: #959595;
-        font-weight: $font-weight-normal;
-        font-size: $font-size-xs;
+        // color: #959595;
+        color: #a9a9a9;
+        font-weight: 00;
+        font-size: 0.8rem;
         border-bottom: 1px solid #e9e9e9;
+
+        @include respond(phone) {
+            font-size: 0.8rem;
+        }
 
         @include respond(phone) {
             padding-top: 1rem;
@@ -23,6 +32,9 @@
     }
 
     &__contacts {
+        @include respond(phone) {
+            display: none;
+        }
         span {
             margin-right: 1rem;
 
@@ -55,6 +67,7 @@
             i {
                 margin: 0.3rem;
             }
+
         }
     }
 
@@ -195,6 +208,7 @@
 
     @include respond(phone) {
         display: block;
+        font-size: 2rem;
     }
 
     @include respond(tab-port) {
