@@ -1,6 +1,23 @@
 .header-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-land) {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-menu {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
 }
 .header {
     position: relative;
@@ -9,6 +26,7 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
+    background-color: $main-color;
 
     &__top {
         padding: 0.6rem;
@@ -23,12 +41,19 @@
 
         @include respond(phone) {
             font-size: 0.8rem;
+            display: flex;
+            // justify-content: flex-end;
+            padding: 0;
         }
 
+    }
+    .social {
         @include respond(phone) {
-            padding-top: 1rem;
-            padding-bottom: 0;
+            display: none;
         }
+        margin-right: 2rem;
+        display: flex;
+        gap: 1rem;
     }
 
     &__contacts {
@@ -45,11 +70,7 @@
         }
     }
 
-    &__logo {
-        margin: 0;
-        padding: 0;
-    }
-
+  
     &__icons {
         display: flex;
         align-items: center;
@@ -226,6 +247,7 @@
 
 .nav-open .fa-xmark {
     display: block;
+    margin-left: 2rem;
 }
 
 .nav-open .fa-bars {
@@ -250,12 +272,11 @@ nav {
 
 .fa-facebook, .fa-twitter {
     color: #959595;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        color: #333;
-        font-size: 1.6rem;
+        color: $secondary-color;
     }
 }
 

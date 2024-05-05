@@ -1,8 +1,14 @@
-<header class="header-container">
-  <%= image_tag "Kamic.PNG", alt: "Logo" %>
-  <div class="header" data-controller="humburger">
+<header class="header-container"  data-controller="humburger">
+  <div class="logo-menu">
+    <%= image_tag "Kamic.PNG", alt: "Logo" %>
+    <button data-action="click->humburger#toggle" class="btn-mobile-nav">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
   
-  
+  <div class="header">
+
       <div class="header__top">
         <div class="header__contacts" %>
             <span>
@@ -18,12 +24,11 @@
             </span>
         </div>
         <div class="menu-container">
-            <button data-action="click->humburger#toggle" class="btn-mobile-nav">
-              <i class="fa-solid fa-bars"></i>
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            
+            <div class="social">
+              <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
       </div>
        <nav>
@@ -42,7 +47,7 @@
                 <%= link_to 'Contact Us', contact_us_path, class: "header__menu__item" %>
               </li>
             <% if current_user %>
-              <%= link_to 'Dashboard', kashg_path, class: "btn--dash" %>
+              <%= link_to 'Dashboard', hysan_path, class: "btn--dash" %>
               <%= button_to 'logout', logout_path, method: :delete, class: "btn--dash" %>
               <% end %>
             </ul>
