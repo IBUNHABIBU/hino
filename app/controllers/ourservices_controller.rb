@@ -26,7 +26,7 @@ class OurservicesController < ApplicationController
 
     respond_to do |format|
       if @ourservice.save
-        format.html { redirect_to kashg_path, notice: "Ourservice was successfully created." }
+        format.html { redirect_to hysan_path, notice: "Ourservice was successfully created." }
         format.json { render :show, status: :created, location: @ourservice }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class OurservicesController < ApplicationController
   def update
     respond_to do |format|
       if @ourservice.update(ourservice_params)
-        format.html { redirect_to kashg_path, notice: "This section was successfully updated." }
+        format.html { redirect_to hysan_path, notice: "This section was successfully updated." }
         format.json { render :show, status: :ok, location: @ourservice }
       else
         format.html { render :edit, status: :unprocessable_entity }

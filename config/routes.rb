@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :projects
   resources :ourservices
   
-  get 'kashg', to: 'cpanel#index', as: 'kashg'
+  get 'hysan', to: 'cpanel#index', as: 'hysan'
   resources :hero_images
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
