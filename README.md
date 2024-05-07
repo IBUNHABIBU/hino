@@ -277,3 +277,16 @@ server {
 ## toast notification 
 
     https://bbbootstrap.com/snippets/toast-notification-close-button-27153346
+
+
+    Client content
+
+    1.  Quality control equipment in food and beverage, Lab chemicals and allied products. 
+       Picha ya nje hizo mita
+       Picha in details document ya chemical and alied products
+
+    2. Utility and water technologgies 
+        Maelezo ya mwanzo
+        Malezo ya details - Utilities & Water Technologies
+                          Utilities (Product Application Guide) - HYG & SAN TECHNICAL COMPANY LIMITED
+                          

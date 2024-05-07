@@ -1,26 +1,30 @@
-<div class="service-show">
-    <div class="container">
-        <div class="service-show__content">
-            <h1><%= ourservice.Title %></h1>
-                <p><%= ourservice.description %></p>
-        </div>
-        <div class="service-show__img">
-            <%= image_tag ourservice.image %>
-        </div>
-    </div>
-</div>
 
 <div class="angry-grid">
+
   <div id="item-0">
-  <div class="service-show__img">
-  <%= image_tag ourservice.image %>
-</div>
+     <div class="service-show__img">
+     <% if ourservice.images.attached? %>
+       <%= image_tag rails_blob_path(ourservice.images[0]), class: "slder__img" %>
+     <% end %>
+     </div>
   </div>
 
   <div id="item-1">
     <h1><%= ourservice.Title %></h1>
     <p><%= ourservice.description %></p>
   </div>
-  <div id="item-2">&nbsp;</div>
-  <div id="item-3">&nbsp;</div>
+
+  <div id="item-2">
+  <% if ourservice.images.attached? %>
+  <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
+<% end %>
+  </div>
+
+  <div id="item-3">
+  <% if ourservice.images.attached? %>
+  <%= image_tag rails_blob_path(ourservice.images[2]), class: "slder__img" %>
+<% end %>
+  </div>
+
 </div>
+

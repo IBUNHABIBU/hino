@@ -2,29 +2,7 @@
     <%= render 'slider' %>
 </section>
 
-<div class="service" id='service'>
-    <h4>OUR SERVICES</h4>
-    <div class="service__container">
-        <div class="row">
-        <% @ourservices.each do |service| %>
-            <div class="desktop-3 tab-port-4 tab-land-6 phone-12">
-        
-                <div class="service__item">
-                <%= link_to ourservice_path(service)do %>
-                      <%= image_tag service.image, class: "service__img" %>
-                    <div class="service__content">
-                        <h5 class="service__title">
-                            <%= service.Title %>
-                        </h5>
-                        <p class="service__desc"><%= truncate(service.description, length: 140, separator: '') %></p>
-                    </div>
-                <% end %>
-                </div>
-            </div>
-        <% end %>
-        </div>
-    </div>
-</div>
+<%= render 'ourservices/grid' %>
 
 <section class="why">
     <h1 class='why__title'>Why us</h1>
