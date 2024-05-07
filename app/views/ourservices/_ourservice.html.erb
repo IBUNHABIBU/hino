@@ -12,6 +12,10 @@
   <div id="item-1">
     <h1><%= ourservice.Title %></h1>
     <p><%= ourservice.description %></p>
+    <h2>PDF Files</h2>
+<% @ourservice.pdf_files.each do |pdf| %>
+  <%= link_to pdf.filename, rails_blob_path(pdf, disposition: 'inline'), target: '_blank' %><br>
+<% end %>
   </div>
 
   <div id="item-2">
@@ -27,4 +31,8 @@
   </div>
 
 </div>
-
+<div class="pdf">
+<% @ourservice.pdf_files.each do |pdf| %>
+  <iframe src="<%= rails_blob_path(pdf, disposition: 'inline') %>" width="100%" height="600px" frameborder="0"></iframe>
+<% end %>
+</div>
