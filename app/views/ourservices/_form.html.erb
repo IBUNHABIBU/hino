@@ -21,6 +21,12 @@
     <span>Upload Image</span>
     <i></i>
   </div>
+
+  <div class="input-box">
+  <%= form.file_field :pdf_files, multiple: true, required: "required" %>
+  <span>Upload pdf files</span>
+  <i></i>
+</div>
       <%= form.submit "Upload", class: "btn btn--mid" %>
 <% end %>
   </div>
