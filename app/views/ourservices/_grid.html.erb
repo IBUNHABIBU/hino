@@ -1,0 +1,25 @@
+<div class="service" id='service'>
+    <h1>OUR SERVICES</h1>
+    <div class="service__container">
+        <div class="row">
+        <% @ourservices.each do |service| %>
+            <div class="desktop-3 tab-port-6 tab-land-6 phone-12">
+                <div class="service__item">
+                <%= link_to ourservice_path(service) do %>
+
+            <% if service.images.attached? %>
+                <%= image_tag rails_blob_path(service.images[0]), class: "service__img" %>
+            <% end %>
+            <div class="service__content">
+                <h5 class="service__title">
+                    <%= service.Title %>
+                </h5>
+                <p class="service__desc"><%= truncate(service.description, length: 140, separator: '') %></p>
+            </div>
+        <% end %>
+                </div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+</div>
