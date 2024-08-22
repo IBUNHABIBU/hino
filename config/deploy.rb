@@ -1,11 +1,11 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.18.0"
 
-set :application, "kamich"
-set :repo_url, "git@github.com:IBUNHABIBU/kamich.git"
+set :application, "hino"
+set :repo_url, "git@github.com:IBUNHABIBU/hino.git"
 
 set :rbenv_type, :user
-set :rbenv_ruby, '3.0.1'
+set :rbenv_ruby, '3.3.3'
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deployer/#{fetch :application}"
