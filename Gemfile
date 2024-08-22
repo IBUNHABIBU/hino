@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '3.3.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
@@ -89,3 +89,7 @@ gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 gem "uri", "~> 0.13.0"
 
 gem "dartsass-rails", "~> 0.5.0"
+
+gem 'base64'
+gem 'bigdecimal'
+
