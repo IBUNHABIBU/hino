@@ -346,7 +346,7 @@ DEPENDENCIES
   bcrypt_pbkdf (>= 1.0, < 2.0)
   bigdecimal
   bootsnap
-  capistrano (~> 3.11)
+  capistrano (~> 3.19.1)
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.4)
   capistrano-rbenv (~> 2.1, >= 2.1.4)
