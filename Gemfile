@@ -92,4 +92,4 @@ gem "dartsass-rails", "~> 0.5.0"
 
 gem 'base64'
 gem 'bigdecimal'
-
+gem 'mutex_m'
