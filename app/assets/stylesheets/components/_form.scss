@@ -3,12 +3,11 @@
     @include width_and_height(60%, 60vh);
     background-color: $color-tertiary;
     overflow: hidden;
+    margin: 1rem auto;
 
     &--mid {
         @include width_and_height($height:74vh);
     }
-
-    margin: 1rem auto;
 
     &::before {
         content: "";

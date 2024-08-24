@@ -48,12 +48,13 @@
 
     }
     .social {
-        @include respond(phone) {
-            display: none;
-        }
         margin-right: 2rem;
         display: flex;
         gap: 1rem;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__contacts {
