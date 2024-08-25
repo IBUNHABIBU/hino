@@ -7,6 +7,9 @@ set :repo_url, "git@github.com:IBUNHABIBU/hino.git"
 set :rbenv_type, :user
 set :rbenv_ruby, '3.3.3'
 
+set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :rbenv_roles, :all # default value
+
 # Deploy to the user's home directory
 set :deploy_to, "/home/deployer/#{fetch :application}"
 
@@ -17,6 +20,9 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 set :branch, ENV['BRANCH'] || 'main'
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
+
+set :log_level, :debug
+
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
