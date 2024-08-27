@@ -11,7 +11,7 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :rbenv_roles, :all # default value
 
 # Deploy to the user's home directory
-set :deploy_to, "/home/hysan/#{fetch :application}"
+set :deploy_to, "/home/deployer/#{fetch :application}"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
