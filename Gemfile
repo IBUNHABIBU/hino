@@ -79,10 +79,12 @@ end
 
 
 gem "net-http"
-gem 'capistrano', '~> 3.19.1'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+# gem 'puma', '~> 6.0'
+gem 'capistrano', '~> 3.17'
+gem 'capistrano-rails', '~> 1.6'
+gem 'capistrano-rbenv', '~> 2.2'
+gem 'capistrano3-puma', '~> 5.0'
+
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
