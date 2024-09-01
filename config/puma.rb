@@ -14,8 +14,8 @@ pidfile ENV.fetch("PIDFILE", "tmp/pids/server.pid")
 if rails_env == "production"
   # Production settings
   puts "**********************Prduction Environment*********************"
-  bind "unix:///home/deployer/myapp/shared/tmp/sockets/puma.sock"
-  stdout_redirect "/home/deployer/myapp/shared/log/puma.stdout.log", "/home/deployer/myapp/shared/log/puma.stderr.log", true
+  bind "unix:///home/deployer/hino/shared/tmp/sockets/puma.sock"
+  stdout_redirect "/home/deployer/hino/shared/log/puma.stdout.log", "/home/deployer/hino/shared/log/puma.stderr.log", true
 
   workers ENV.fetch("WEB_CONCURRENCY", 2)
   preload_app!
