@@ -80,7 +80,6 @@ end
 
 gem "net-http"
 # gem 'puma', '~> 6.0'
-g
 gem 'capistrano', '~> 3.19.1'
 gem 'capistrano-rails', '~> 1.4'
 gem 'capistrano-passenger', '~> 0.2.0'
