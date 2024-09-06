@@ -16,17 +16,16 @@
     </div>
   
     <div id="item-2">
-    <% if ourservice.images.attached? %>
-    # <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
-    <% end %>
+      <% if ourservice.images.attached? %>
+      # <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
+      <% end %>
     </div>
   
     <div id="item-3">
-    <% if ourservice.images.attached? %>
-    <%= image_tag rails_blob_path(ourservice.images[2]), class: "slder__img" %>
-    <% end %>
+      <% if ourservice.images.attached? %>
+      <%= image_tag rails_blob_path(ourservice.images[2]), class: "slder__img" %>
+      <% end %>
     </div>
-  
   </div>
   <div class="pdf" >
     <% @ourservice.pdf_files.each do |pdf| %>

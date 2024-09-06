@@ -132,8 +132,8 @@ transition: background-color 0.3s ease;
 }
 
 .pdf {
-  width: 90%;
-  margin: 0 auto;
+  width: 96%;
+  margin: 24rem auto 0;
 
   @include respond(phone) {
     padding-bottom: 100%;
