@@ -134,4 +134,19 @@ transition: background-color 0.3s ease;
 .pdf {
   width: 90%;
   margin: 0 auto;
+
+  @include respond(phone) {
+    padding-bottom: 100%;
+  }
+
+  @include respond(tab-land) {
+    padding-bottom: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    padding-bottom: 75%;
+  }
+
+
 }
+
