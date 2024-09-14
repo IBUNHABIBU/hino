@@ -249,7 +249,7 @@ This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 server {
 
-  server_name kamich.darlive.cyou www.kamich.darlive.cyou;
+  server_name habibtech.cyou www.kamich.darlive.cyou;
   root /home/deploy/colabapi/current/public;
 
   passenger_enabled on;
