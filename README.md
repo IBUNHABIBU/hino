@@ -268,11 +268,6 @@ server {
     gzip_static on;
   }
 
-    listen [::]:443 ssl; # managed by Certbot
-    listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/colabapi.darlive.cyou/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/colabapi.darlive.cyou/privkey.pem; # managed by Certbot
-    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
 
 ## toast notification 
 
