@@ -7,8 +7,10 @@ ruby '3.3.3'
 gem 'rails', '~> 8.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sprockets-rails'
+# gem 'sprockets-rails'
 
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
+gem "propshaft"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
@@ -16,7 +18,7 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.4', '>= 6.4.2'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem 'jsbundling-rails'
+# gem 'jsbundling-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
@@ -25,7 +27,7 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem 'cssbundling-rails'
+# gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -80,10 +82,10 @@ end
 
 gem "net-http"
 # gem 'puma', '~> 6.0'
-gem 'capistrano', '~> 3.19.1'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+# gem 'capistrano', '~> 3.19.1'
+# gem 'capistrano-rails', '~> 1.4'
+# gem 'capistrano-passenger', '~> 0.2.0'
+# gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
@@ -95,3 +97,6 @@ gem "dartsass-rails", "~> 0.5.0"
 gem 'base64'
 gem 'bigdecimal'
 gem 'mutex_m'
+
+# Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
+gem "thruster", require: false
