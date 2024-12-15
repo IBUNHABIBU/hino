@@ -18,3 +18,5 @@ application.register("slider", SliderController)
 
 import ToastController from "./toast_controller"
 application.register("toast", ToastController)
+
+console.log("Hellow controller");
