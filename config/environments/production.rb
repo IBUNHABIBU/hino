@@ -6,6 +6,9 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.enable_reloading = false
 
+  config.assets.compile = true # Temporarily enable for debugging
+  config.public_file_server.enabled = true
+
   # Eager load code on boot for better performance and memory savings (ignored by Rake tasks).
   config.eager_load = true
 
@@ -19,7 +22,7 @@ Rails.application.configure do
   config.public_file_server.headers = { "cache-control" => "public, max-age=#{1.year.to_i}" }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.asset_host = "http://assets.example.com"
+  config.asset_host = "https://hysan.co.tz"
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
