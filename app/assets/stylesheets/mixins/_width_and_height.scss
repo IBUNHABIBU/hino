@@ -1,6 +1,8 @@
-@mixin width_and_height($width: 30%, $height) {
-    width: $width;
-    height: $height;
+@use '../config/variables' as var;
+
+@mixin width_and_height(var.$width, var.$height) {
+    width: var.$width;
+    height: var.$height;
 }
 
 @mixin centerposition {
