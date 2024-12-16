@@ -1,9 +1,11 @@
+@use '../config/variables' as var;
+
 .service {
-    margin-bottom: $space-xxl;
-    padding: $space-l;
+    margin-bottom: var.$space-xxl;
+    padding: var.$space-l;
     display: flex;
     flex-direction: column;
-    align-items: center; background-image: linear-gradient(to bottom, $main-color 60%, transparent 40%);
+    align-items: center; background-image: linear-gradient(to bottom, var.$main-color 60%, transparent 40%);
     
     &__container {
         width: 90%;
@@ -12,13 +14,13 @@
         box-shadow: -9px 10px 7px -7px rgba(167, 167, 167, 0.75);
     }
     h1, h4 {
-        margin-bottom: $space-m;
-        font-size: $font-size-xl;
+        margin-bottom: var.$space-m;
+        font-size: var.$font-size-xl;
         font-weight: 500;
         text-align: center;
-        color: $color-tertiary;
+        color: var.$color-tertiary;
         display: inline-block;
-        background-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%);
+        background-image: linear-gradient(to right, var.$color-tertiary 50%, transparent 50%);
         background-size: 60% 0.2rem; /* Adjust the thickness of the underline */
         background-position: 90% 100%; /* Align the underline to the bottom */
         background-repeat: no-repeat;
@@ -44,12 +46,12 @@
     }
     &__title {
         font-weight: 700;
-        color: $title-color;
+        color: var.$title-color;
         font-size: 1rem;
         margin-bottom: 1rem;
 
         &:hover {
-            color: $color-tertiary;
+            color: var.$color-tertiary;
             transition: color 0.5s;
         }
     }
