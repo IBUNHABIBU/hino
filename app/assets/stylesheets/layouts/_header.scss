@@ -1,18 +1,19 @@
 @use '../config/variables' as var;
+@use '../mixins/media' as media;
 
 .header-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 
-    @include respond(phone) {
+    @include media.respond(phone) {
         grid-template-columns: 1fr;
     }
 
-    @include respond(tab-port) {
+    @include media.respond(tab-port) {
         grid-template-columns: 1fr;
     }
 
-    @include respond(tab-land) {
+    @include media.respond(tab-land) {
         grid-template-columns: 1fr;
     }
 
@@ -41,7 +42,7 @@
         font-size: 0.8rem;
         border-bottom: 1px solid #e9e9e9;
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             font-size: 0.8rem;
             display: flex;
             // justify-content: flex-end;
@@ -54,13 +55,13 @@
         display: flex;
         gap: 1rem;
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             display: none;
         }
     }
 
     &__contacts {
-        @include respond(phone) {
+        @include media.respond(phone) {
             display: none;
         }
         span {
@@ -98,11 +99,11 @@
     &__btn {
         display: none;
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             display: flex;
         }
 
-        @include respond(tab-port) {
+        @include media.respond(tab-port) {
             display: flex;
         }
         .button {
@@ -169,7 +170,7 @@
     &__menu {
         display: flex;
         align-items: center;
-        @include respond(phone) {
+        @include media.respond(phone) {
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -186,7 +187,7 @@
             transition: all 0.5s ease-in-out;
         }
 
-        @include respond(tab-port) {
+        @include media.respond(tab-port) {
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -206,11 +207,11 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-           @include respond(phone) {
+           @include media.respond(phone) {
             width: 100%;
            }
 
-           @include respond(tab-port) {
+           @include media.respond(tab-port) {
             width: 100%;
            }
         }
@@ -230,12 +231,12 @@
     cursor: pointer;
     display: none;
 
-    @include respond(phone) {
+    @include media.respond(phone) {
         display: block;
         font-size: 2rem;
     }
 
-    @include respond(tab-port) {
+    @include media.respond(tab-port) {
         display: block;
     }
 

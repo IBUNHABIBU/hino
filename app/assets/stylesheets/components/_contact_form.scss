@@ -1,4 +1,5 @@
 @use '../config/variables' as var;
+@use '../mixins/media' as media;
 
 .contact-header {
   font-size: 2rem;
@@ -15,7 +16,7 @@
   height: 80vh;
   padding: 2rem;
 
-  @include respond(phone) {
+  @include media.respond(phone) {
     height: 120vh;
     flex-wrap: wrap;
   }
