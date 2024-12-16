@@ -1,3 +1,5 @@
+@use '../config/variables' as var;
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -26,7 +28,7 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
-    background-color: $main-color;
+    background-color: var.$main-color;
 
     &__top {
         padding: 0.6rem;
@@ -66,7 +68,7 @@
 
             .fa-location-dot, .fa-envelope, .fa-phone-volume {
                 margin-right: 0.2rem;
-                color: $secondary-color;
+                color: var.$secondary-color;
             }
         }
     }
@@ -150,14 +152,14 @@
         background-color: white;
         
         li {
-            padding: $space-xs $space-m;
+            padding: var.$space-xs var.$space-m;
 
             a {
                 transition: all 0.6s ease-in-out;
             }
 
             a:hover {
-                color: $secondary-color;
+                color: var.$secondary-color;
                 transform: scale(1.1);
             }
         }
@@ -217,8 +219,8 @@
     a {
         text-decoration: none;
         color: #1c1c1c;
-        font-size: $font-size-xs;
-        font-weight: $font-weight-bold;
+        font-size: var.$font-size-xs;
+        font-weight: var.$font-weight-bold;
     }
 }
 
@@ -277,7 +279,7 @@ nav {
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        color: $secondary-color;
+        color: var.$secondary-color;
     }
 }
 
