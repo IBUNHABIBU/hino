@@ -1,7 +1,7 @@
 @use '../config/variables' as var;
 
 .btn {
-    background-color: $color-white;
+    background-color: var.$color-white;
     outline: none;
     border: none;
     font-size: 1.4rem;
