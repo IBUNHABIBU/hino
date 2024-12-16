@@ -1,3 +1,5 @@
+@use './variables';
+
 *,
 *::before,
 *::after {
@@ -22,9 +24,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: $color-white;
-  line-height: $line-height-body;
-  font-family: $font-family-lato;
+  color: var.$color-white;
+  line-height: var.$line-height-body;
+  font-family: var.$font-family-lato;
   font-size: 62.5%;
   overflow-x: hidden;
   // @include respond(tab-land) {
@@ -60,12 +62,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-text-header;
-  line-height: $line-height-headers;
+  color: var.$color-text-header;
+  line-height: var.$line-height-headers;
 }
 
 h1 {
-  font-size: $font-size-xxxl;
+  font-size: var.$font-size-xxxl;
 }
 
 h2 {
