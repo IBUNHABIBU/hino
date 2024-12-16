@@ -1,10 +1,12 @@
+@use '../config/variables' as var;
+
 footer {
     h3 {
-        color: $secondary-color;
+        color: var.$secondary-color;
     }
 }
 .interesting-infos {
-    background-color: $main-color;
+    background-color: var.$main-color;
     color: #fff;
     padding: 30px;
 }
@@ -33,12 +35,12 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px;
-    font-size: $font-size-xs;
+    font-size: var.$font-size-xs;
 }
 
 
 .footer-section p {
-    font-size: $font-size-xs;
+    font-size: var.$font-size-xs;
 }
 
 .footer-top {
@@ -51,7 +53,7 @@ footer {
     margin-bottom: 4rem;
     padding: 2rem;
 
-    background-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%);
+    background-image: linear-gradient(to right, var.$color-tertiary 50%, transparent 50%);
     background-size: 140% 0.4rem; /* Adjust the thickness of the underline */
     background-position: 100% 100%; /* Align the underline to the bottom */
     background-repeat: no-repeat;
@@ -65,7 +67,7 @@ footer {
             font-size: 1.5rem;
 
             &:hover {
-                color: $color-tertiary;
+                color: var.$color-tertiary;
             }
         }
     }
@@ -80,14 +82,14 @@ footer {
         font-size: 1.5rem;
         border-radius: 50%;
         padding: 1rem;
-        border: 0.2rem solid $color-tertiary;
+        border: 0.2rem solid var.$color-tertiary;
      }
 
      span {
         font-size: 1rem;
 
         a {
-            color: $color-tertiary;
+            color: var.$color-tertiary;
             font-size: 2rem;
         }
      }
@@ -106,7 +108,7 @@ footer {
         background-color: rgba(255, 255, 255, 0.523);
     }
     a {
-        color: $color-tertiary;
+        color: var.$color-tertiary;
         font-size: 0.7rem;
     }
 }
