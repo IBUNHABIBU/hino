@@ -1,3 +1,5 @@
+@use '../mixins/media';
+
 .service-show {
   // background-color: $secondary-color;
   margin: 3rem 1rem;
@@ -15,7 +17,7 @@
     box-shadow: -1px 0px 7px -1px rgba(163, 163, 163, 0.75);
     border-top: 0.1px solid rgba(229, 229, 229, 0.45);
 
-    @include respond(phone) {
+    @include media.respond(phone) {
       grid-template-columns: 1fr;
       height: 100vh;
     }
@@ -135,15 +137,15 @@ transition: background-color 0.3s ease;
   width: 96%;
   margin: 24rem auto 0;
 
-  @include respond(phone) {
+  @include media.respond(phone) {
     padding-bottom: 100%;
   }
 
-  @include respond(tab-land) {
+  @include media.respond(tab-land) {
     padding-bottom: 56.25%;
   }
 
-  @include respond(tab-port) {
+  @include media.respond(tab-port) {
     padding-bottom: 75%;
   }
 
