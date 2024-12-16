@@ -73,15 +73,15 @@
       }
 
       .main {
-        background-color: $main-color;
+        background-color: var.$main-color;
       }
 
       .sec {
-        background-color: $secondary-color;
+        background-color: var.$secondary-color;
       }
 
       .tertiary {
-        background-color: $color-tertiary;
+        background-color: var.$color-tertiary;
       
       }
 
