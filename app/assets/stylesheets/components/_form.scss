@@ -1,12 +1,14 @@
+@use '../config/variables' as var;
+
 .form {
     position: relative;
     @include width_and_height(60%, 60vh);
-    background-color: $color-tertiary;
+    background-color: var.$color-tertiary;
     overflow: hidden;
     margin: 1rem auto;
 
     &--mid {
-        @include width_and_height($height:74vh);
+        @include width_and_height(var.$height:74vh);
     }
 
     &::before {
@@ -14,9 +16,9 @@
         position: absolute;
         top: -50%;
         left: -50%;
-        width: $form-width;
-        height: $form-height;
-        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+        width: var.$form-width;
+        height: var.$form-height;
+        background: linear-gradient(0deg, transparent, transparent, var.$color-text-section, var.$color-text-section);
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
     }
@@ -28,7 +30,7 @@
         left: -50%;
         width: $form-width;
         height: $form-height;
-        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+        background: linear-gradient(0deg, transparent, transparent, var.$color-text-section, var.$color-text-section);
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
         animation-delay: -3s;
@@ -37,7 +39,7 @@
     &__container {
         position: absolute;
         inset: 2px;
-        background-color: $color-tertiary;
+        background-color: var.$color-tertiary;
         border-radius: 8px;
         z-index: 10;
         padding: 40px 50px;
@@ -88,7 +90,7 @@
                         span {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
-                            color: $color-text-section;
+                            color: var.$color-text-section;
                         }
                         i {
                             height: 90%;
@@ -106,7 +108,7 @@
                 padding: 20px 10px 10px;
                 font-size: 1em;
                 pointer-events: none;
-                color: $color-text-muted;
+                color: var.$color-text-muted;
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
@@ -128,7 +130,7 @@
                 bottom: 0;
                 width: 100%;
                 height: 2px;
-                background-color: $color-text-section;
+                background-color: var.$color-text-section;
                 border-radius: 4px;
                 transition: 0.5s;
                 pointer-events: none;
@@ -144,10 +146,10 @@
             a {
                 margin: 10px 0;
                 font-size: 1rem;
-                color: $color-text-muted;
+                color: var.$color-text-muted;
 
                 &:hover, &:nth-child(2) {
-                    color: $color-text-section;
+                    color: var.$color-text-section;
                 }
             }
         }
