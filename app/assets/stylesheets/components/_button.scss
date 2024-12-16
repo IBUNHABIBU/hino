@@ -26,7 +26,7 @@
 
     &--main {
         background-color: var.$secondary-color;
-        color: $color-white;
+        color: var.$color-white;
 
         &:hover {
             background-color: darken(var.$main-color, 10%);
