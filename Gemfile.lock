@@ -114,6 +114,8 @@ GEM
     ffi (1.17.0-x86-linux-gnu)
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
+    friendly_id (5.5.1)
+      activerecord (>= 4.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (4.29.1)
@@ -339,6 +341,7 @@ DEPENDENCIES
   dartsass-rails (~> 0.5.0)
   debug
   ed25519 (>= 1.2, < 2.0)
+  friendly_id (~> 5.5.0)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
