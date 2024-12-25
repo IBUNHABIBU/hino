@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'contact_us', to: 'contact_form#index', as: 'contact_us'
+  get 'contact-hysan', to: 'contact_form#index', as: 'contact_us'
 
   get 'contact_form/new'
   post 'contact_form/create'
-  get 'about_us', to: 'about#index', as: 'about_us'
+  get 'about-hysan', to: 'about#index', as: 'about_us'
   resources :partners
   resources :projects
   resources :ourservices
