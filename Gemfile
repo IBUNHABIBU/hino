@@ -14,6 +14,8 @@ gem "propshaft"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
+gem 'friendly_id', '~> 5.5.0'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 6.4', '>= 6.4.2'
 
