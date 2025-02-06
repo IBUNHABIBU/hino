@@ -58,6 +58,7 @@ env:
 aliases:
   shell: app exec --interactive --reuse "bash"
   
+  shell: app exec --interactive --reuse "bash"
 
 # Use a different ssh user than root
 
