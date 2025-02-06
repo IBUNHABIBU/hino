@@ -46,7 +46,7 @@ builder:
 #
 env:
   clear:
-    DB_HOST: 192.168.0.2
+    DB_HOST: hino-db
   secret:
     - RAILS_MASTER_KEY
 
