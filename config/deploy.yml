@@ -86,7 +86,7 @@ accessories:
     env:
       clear:
         MYSQL_ROOT_HOST: '%'
-#       secret:
+      secret:
 #         - MYSQL_ROOT_PASSWORD
 #     files:
 #       - config/mysql/production.cnf:/etc/mysql/my.cnf
