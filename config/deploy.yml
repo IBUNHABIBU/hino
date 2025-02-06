@@ -83,7 +83,7 @@ accessories:
     image: mysql:8.0
     host: 192.168.0.2
     port: 3306
-#     env:
+    env:
 #       clear:
 #         MYSQL_ROOT_HOST: '%'
 #       secret:
