@@ -91,7 +91,7 @@ accessories:
     files:
       - config/mysql/production.cnf:/etc/mysql/my.cnf
       - db/production.sql:/docker-entrypoint-initdb.d/setup.sql
-#     directories:
+    directories:
 #       - data:/var/lib/mysql
 #   redis:
 #     image: valkey/valkey:8
