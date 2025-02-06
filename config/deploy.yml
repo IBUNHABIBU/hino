@@ -50,7 +50,7 @@ env:
   secret:
     - RAILS_MASTER_KEY
     - POSTGRES_PASSWORD
-    
+    -
 
 
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
