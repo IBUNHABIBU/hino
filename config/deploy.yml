@@ -101,6 +101,7 @@ accessories:
         - POSTGRES_USER
       
     files:
+      - 
     directories:
       - data:/var/lib/mysql
 #   redis:
