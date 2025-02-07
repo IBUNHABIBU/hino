@@ -93,8 +93,11 @@ accessories:
     env:
       clear:
         POSTGRES_USER: 'postgres'
-        POSTGRES_DB: 'hino_production
-        '
+        POSTGRES_DB: 'hino_production'
+
+      secret: 
+        - RAILS_MASTER_KEY
+        
       
     files:
       - config/mysql/production.cnf:/etc/mysql/my.cnf
