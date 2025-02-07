@@ -64,12 +64,12 @@ aliases:
 # Use a different ssh user than root
 
 ssh:
-  user: app
+  user: ibunhabibu
 
 # Use a persistent storage volume.
 #
 volumes:
-  - "app_storage:/app/storage"
+  - "hino_storage:/app/storage"
 
 # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
 # hitting 404 on in-flight requests. Combines all files from new and old
