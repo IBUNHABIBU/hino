@@ -93,7 +93,8 @@ accessories:
     env:
       clear:
         POSTGRES_USER: 'postgres'
-        POSTGRES_DB: 'hino_production'
+        POSTGRES_DB: 'hino_production
+        '
       
     files:
       - config/mysql/production.cnf:/etc/mysql/my.cnf
