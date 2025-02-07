@@ -87,7 +87,7 @@ asset_path: /app/public/assets
 #
 accessories:
   db:
-    image: mysql:8.0
+    image: postgres:16
     host: 192.168.0.2
     port: 3306
     env:
