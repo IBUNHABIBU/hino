@@ -92,7 +92,7 @@ accessories:
     port: "127.0.0.1:5433:5433"
     env:
       clear:
-        MYSQL_ROOT_HOST: '%'
+        : 'postgres'
       secret:
         - MYSQL_ROOT_PASSWORD
     files:
