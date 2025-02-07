@@ -88,8 +88,8 @@ asset_path: /app/public/assets
 accessories:
   db:
     image: postgres:16
-    host: 192.168.0.2
-    port: 3306
+    host: 45.92.9.7
+    port: "127.0.0.1:5433:5433"
     env:
       clear:
         MYSQL_ROOT_HOST: '%'
