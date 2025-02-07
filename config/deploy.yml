@@ -101,7 +101,7 @@ accessories:
         - POSTGRES_USER
       
     files:
-      - 
+      - config/init.sql:/docker-entrypoint-initdb.d/setup.sql
     directories:
       - data:/var/lib/mysql
 #   redis:
