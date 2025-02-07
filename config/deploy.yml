@@ -98,7 +98,7 @@ accessories:
       secret: 
         - RAILS_MASTER_KEY
         - POSTGRES_PASSWORD
-        - 
+        - POSTGRES_USER
       
     files:
       - config/mysql/production.cnf:/etc/mysql/my.cnf
