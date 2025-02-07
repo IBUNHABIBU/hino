@@ -93,7 +93,7 @@ accessories:
     env:
       clear:
         POSTGRES_USER: 'postgres'
-        POSTGRES_PASSWORD: 
+        POSTGRES_DB: 
       
     files:
       - config/mysql/production.cnf:/etc/mysql/my.cnf
