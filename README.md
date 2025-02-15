@@ -130,9 +130,6 @@ secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae8
 1. 
 
 
-2. 
-You have already activated uri 0.12.1, but your Gemfile requires uri 0.13.0. Prepending `bundle exec` to your command may solve this.
-
 Solution
 
 I removed the uri '0.12.1' in the vps using command 
