@@ -53,30 +53,6 @@ It has all the features that I need to build a rails project
     - [] Email notifications
     - [] OTP authentication, 2FA, 2SV, authenticator app, SMS, email
 
-- [] Clean code, dry, BEM, SASS, loop
-- [x] Mega Menu, footer, sidebar
-- [] Toast notification using hotwire
-- [] site map, geolocation, google navigator etc
-- [x] Responsive design
-- [] Search
-- [] Pagination
-- [] Filter
-- [] Sort
-- [] Rating
-- [] Comment
-- [] Like
-- [] Follow
-- [] Share
-- [] Favorite
-- [] Bookmark
-- [] Upload image
-- [] Upload video
-- [x] Upload audio
-- [x] Upload file
-- [] Well documented Gem file and readme file
-- [] Charts and graph
-- [] Hotwire
-
   
 <h3 align="center"> Entity Relationship Diagram (ERD) </h3>
 
