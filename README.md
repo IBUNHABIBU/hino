@@ -132,13 +132,6 @@ secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae8
 
 Solution
 
-I removed the uri '0.12.1' in the vps using command 
-
-`gem list uri`
-gem list -d uri
-gem uninstall uri
-gem install uri -v '0.13.0'
-
 2.   01 rake aborted!
       01 ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
 
