@@ -135,17 +135,6 @@ Solution
 2.   01 rake aborted!
       01 ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
 
-      Solution
-
-      I deleted the credentials.yml.enc
-      and then I created again using the command `EDITOR='code --wait' rails credentias:edit`
-
-3. DEBUG [a7255b43] 	rake aborted!
- DEBUG [a7255b43] 	ActiveRecord::NoDatabaseError: We could not find your database: kamich. Which can be found in the database configuration file located at config/database.yml.
-
- solution
-
- I created the database in the vps using the sql commands
 
  when doing display none transision will not work
  
