@@ -44,6 +44,11 @@ It has all the features that I need to build a rails project
 
 
 ### Features
+- [] User authentication
+    - [] Sign up/Sign in with username and password/ Sign in with Facebook/twitter/github
+    - [] Reset password
+    - [] Forgot password
+    - [] Remember me
 
   
 <h3 align="center"> Entity Relationship Diagram (ERD) </h3>
