@@ -129,12 +129,6 @@ secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae8
 ### Challenges
 1. 
 
-It seems like you're encountering an error related to SSH key authentication with the ed25519 key type in your Ruby application. The error message indicates that the ed25519 gem is missing, which is required for ssh-ed25519 support in net-ssh.
-Solution 
-
-add 
-gem 'ed25519', '>= 1.2', '< 2.0'
-gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
 2. 
 You have already activated uri 0.12.1, but your Gemfile requires uri 0.13.0. Prepending `bundle exec` to your command may solve this.
