@@ -130,7 +130,6 @@ Solution
 2.   01 rake aborted!
       01 ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
 
-
  when doing display none transision will not work
  
  `CREATE DATABASE `;
