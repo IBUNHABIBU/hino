@@ -127,7 +127,6 @@ secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae8
 ### Challenges
 1. 
 
-
 Solution
 
 2.   01 rake aborted!
