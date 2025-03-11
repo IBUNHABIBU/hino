@@ -70,7 +70,6 @@ This project was built using these technologies.
 * Rubocop
 * Capybara
 
-
 ### How to Install 
 
 To run this locally, clone the repository, navigate to its containing directory.
