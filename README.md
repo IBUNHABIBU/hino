@@ -138,7 +138,7 @@ Solution
 
  when doing display none transision will not work
  
- `CREATE DATABASE kamich`;
+ `CREATE DATABASE `;
 
 
 
