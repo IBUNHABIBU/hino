@@ -121,8 +121,7 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 | `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
 
 <!-- ### How to play -->
-secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae85a0089d0059bab3e854f015ac9a142c27e0dcaba31b4a8ce17e49eb2
-
+secret_key_base: 
 ### Challenges
 1. 
 
