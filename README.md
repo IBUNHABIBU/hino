@@ -135,7 +135,6 @@ Solution
  `CREATE DATABASE `;
 
 
-
 ## Live link
 
 [Live Demo ](https://final-car-rent-api.herokuapp.com/api/v1/cars) of the project
