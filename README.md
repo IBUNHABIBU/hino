@@ -61,7 +61,6 @@ It has all the features that I need to build a rails project
 This project was built using these technologies.
 * Ruby on Rails
 
-
 ### Requirements
 * Ruby
 * Ruby on Rails
