@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.3'
+ruby '3.4.8'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 8.0'
@@ -104,3 +104,10 @@ gem 'mutex_m'
 
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
+
+# Source - https://stackoverflow.com/a
+# Posted by Nigel Sheridan-Smith
+# Retrieved 2026-01-29, License - CC BY-SA 4.0
+
+gem "jsbundling-rails"
+gem "cssbundling-rails"
