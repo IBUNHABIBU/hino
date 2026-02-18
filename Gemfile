@@ -13,7 +13,7 @@ gem 'sprockets-rails'
 gem 'pg', '~> 1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 6.0'
+gem 'puma', '~> 6.4'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem 'jsbundling-rails'
@@ -80,10 +80,6 @@ end
 
 gem "net-http"
 # gem 'puma', '~> 6.0'
-gem 'capistrano', '~> 3.17'
-gem 'capistrano-rails', '~> 1.6'
-gem 'capistrano-rbenv', '~> 2.2'
-gem 'capistrano3-puma', '~> 5.0'
 
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'

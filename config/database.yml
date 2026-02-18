@@ -18,8 +18,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: localhost
-  username: <%= Rails.application.credentials.db_name %>
-  password: <%= Rails.application.credentials.db_pswd %>
+  username: postgres
+  password: Voda
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
