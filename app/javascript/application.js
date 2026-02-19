@@ -1,5 +1,1 @@
-// Entry point for the build script in your package.json
-import "@hotwired/turbo-rails"
-import "./controllers"
-import "@fortawesome/fontawesome-free/js/all";
-
+// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
