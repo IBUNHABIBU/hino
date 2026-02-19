@@ -1,3 +1,6 @@
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+
 .service-show {
   // background-color: $secondary-color;
   margin: 3rem 1rem;
