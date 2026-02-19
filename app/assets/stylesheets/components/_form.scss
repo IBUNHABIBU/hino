@@ -1,3 +1,6 @@
+@use '../mixins/width_and_height' as *;
+@use '../config/variables' as *;
+
 .form {
     position: relative;
     @include width_and_height(60%, 60vh);
