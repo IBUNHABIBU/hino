@@ -1,3 +1,6 @@
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+
 footer {
     h3 {
         color: $secondary-color;

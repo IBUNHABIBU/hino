@@ -1,3 +1,6 @@
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
