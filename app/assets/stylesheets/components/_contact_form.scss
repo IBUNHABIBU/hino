@@ -1,3 +1,5 @@
+@use '../mixins/media' as *;
+@use '../config/variables' as *;
 
 .contact-header {
   font-size: 2rem;
