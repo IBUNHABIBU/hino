@@ -126,6 +126,8 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.6.2)
+    dockerfile-rails (1.7.10)
+      rails (>= 3.0.0)
     dotenv (3.2.0)
     drb (2.2.3)
     ed25519 (1.4.0)
@@ -447,6 +449,7 @@ DEPENDENCIES
   dartsass-rails (~> 0.5.0)
   debug
   devise (~> 4.9)
+  dockerfile-rails (>= 1.7)
   factory_bot_rails
   faker
   friendly_id (~> 5.4)
