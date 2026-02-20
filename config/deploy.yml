@@ -101,7 +101,7 @@ accessories:
         - POSTGRES_PASSWORD
         - POSTGRES_USER
     files:
-      - db/production.sql:/docker-entrypoint-initdb.d/setup.sql
+      - config/init.sql:/docker-entrypoint-initdb.d/setup.sql
     directories:
       - data:/var/lib/postgresql/data
 #   redis:
