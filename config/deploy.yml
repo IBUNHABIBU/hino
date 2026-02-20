@@ -2,7 +2,7 @@
 service: hino
 
 # Name of the container image.
-image: ibunhabib/hino
+image: ibunhabibu/hino
 
 # Deploy to these servers.
 servers:
