@@ -45,7 +45,7 @@ builder:
 #
 env:
   clear:
-    DB_HOST: hysan-db
+    DB_HOST: hino-db
   secret:
    # - RAILS_MASTER_KEY
     - POSTGRES_PASSWORD
@@ -102,7 +102,7 @@ accessories:
     env:
       clear:
         POSTGRES_USER: "postgres"
-        POSTGRES_DB: "hysan_production"
+        POSTGRES_DB: "hino_production"
       secret:
         - POSTGRES_PASSWORD
         - POSTGRES_USER
