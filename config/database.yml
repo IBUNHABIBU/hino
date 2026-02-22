@@ -81,8 +81,15 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: hino_production
-  username:  <%= ENV["POSTGRES_USER"] %>
-  password: <%= ENV["POSTGRES_PASSWORD"] %>
-  host:  hino-db
+  primary: &primary_production
+    <<: *default
+    database: hino_production
+    username:  <%= ENV["POSTGRES_USER"] %>
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host:  hino-db
+
+  queue:
+    <<: *primary_production
+    database: hino_production_queue
+    migrations_paths: db/queue_migrate
+    pool: 5

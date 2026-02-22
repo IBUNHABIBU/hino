@@ -1,1 +1,2 @@
 CREATE DATABASE hysan_production;
+CREATE DATABASE hysan_production_queue;
