@@ -1,2 +1,2 @@
-CREATE DATABASE hysan_production;
-CREATE DATABASE hysan_production_queue;
+CREATE DATABASE hino_production;
+CREATE DATABASE hino_production_queue;
