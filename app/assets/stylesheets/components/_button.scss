@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 @use "sass:color";
 @use '../config/variables' as var;
 @use '../mixins/media' as media;
 
 .btn {
     background-color: var.$color-white;
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+
+.btn {
+    background-color: $color-white;
+>>>>>>> dep
     outline: none;
     border: none;
     font-size: 1.4rem;
@@ -15,7 +23,11 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
+<<<<<<< HEAD
         background-color: color.adjust(var.$color-white, $lightness: 10%);
+=======
+        background-color: darken($color-white, 10%);
+>>>>>>> dep
     }
 
     &--mid {
@@ -27,22 +39,38 @@
     }
 
     &--main {
+<<<<<<< HEAD
         background-color: var.$secondary-color;
         color: var.$color-white;
 
         &:hover {
             background-color: color.adjust(var.$main-color, $lightness: 10%);
+=======
+        background-color: $secondary-color;
+        color: $color-white;
+
+        &:hover {
+            background-color: darken($main-color, 10%);
+>>>>>>> dep
         }
     }
 
     &--secondary {
+<<<<<<< HEAD
         background-color: var.$color-white;
+=======
+        background-color: $color-white;
+>>>>>>> dep
         color: black;
     }
 
     &--comp {
       background-color: #276988;
+<<<<<<< HEAD
       color: var.$color-white;
+=======
+      color: $color-white;
+>>>>>>> dep
     }
 
     &--border {
@@ -50,7 +78,11 @@
     }
 
     &--mob {
+<<<<<<< HEAD
         @include media.respond(phone) {
+=======
+        @include respond(phone) {
+>>>>>>> dep
         width: 100%;
         font-size: 0.9rem;
         align-self: flex-end;
@@ -63,5 +95,9 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
+<<<<<<< HEAD
     color: red;
+=======
+    
+>>>>>>> dep
 }

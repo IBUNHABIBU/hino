@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
 @use '../mixins/media' as media;
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+>>>>>>> dep
 
 .header-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 
+<<<<<<< HEAD
     @include media.respond(phone) {
         grid-template-columns: 1fr;
     }
@@ -14,6 +20,17 @@
     }
 
     @include media.respond(tab-land) {
+=======
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-land) {
+>>>>>>> dep
         grid-template-columns: 1fr;
     }
 
@@ -29,7 +46,11 @@
     display: flex;
     flex-direction: column;
     z-index: 1;
+<<<<<<< HEAD
     background-color: var.$main-color;
+=======
+    background-color: $main-color;
+>>>>>>> dep
 
     &__top {
         padding: 0.6rem;
@@ -42,7 +63,11 @@
         font-size: 0.8rem;
         border-bottom: 1px solid #e9e9e9;
 
+<<<<<<< HEAD
         @include media.respond(phone) {
+=======
+        @include respond(phone) {
+>>>>>>> dep
             font-size: 0.8rem;
             display: flex;
             // justify-content: flex-end;
@@ -55,13 +80,21 @@
         display: flex;
         gap: 1rem;
 
+<<<<<<< HEAD
         @include media.respond(phone) {
+=======
+        @include respond(phone) {
+>>>>>>> dep
             display: none;
         }
     }
 
     &__contacts {
+<<<<<<< HEAD
         @include media.respond(phone) {
+=======
+        @include respond(phone) {
+>>>>>>> dep
             display: none;
         }
         span {
@@ -69,7 +102,11 @@
 
             .fa-location-dot, .fa-envelope, .fa-phone-volume {
                 margin-right: 0.2rem;
+<<<<<<< HEAD
                 color: var.$secondary-color;
+=======
+                color: $secondary-color;
+>>>>>>> dep
             }
         }
     }
@@ -99,11 +136,19 @@
     &__btn {
         display: none;
 
+<<<<<<< HEAD
         @include media.respond(phone) {
             display: flex;
         }
 
         @include media.respond(tab-port) {
+=======
+        @include respond(phone) {
+            display: flex;
+        }
+
+        @include respond(tab-port) {
+>>>>>>> dep
             display: flex;
         }
         .button {
@@ -153,14 +198,22 @@
         background-color: white;
         
         li {
+<<<<<<< HEAD
             padding: var.$space-xs var.$space-m;
+=======
+            padding: $space-xs $space-m;
+>>>>>>> dep
 
             a {
                 transition: all 0.6s ease-in-out;
             }
 
             a:hover {
+<<<<<<< HEAD
                 color: var.$secondary-color;
+=======
+                color: $secondary-color;
+>>>>>>> dep
                 transform: scale(1.1);
             }
         }
@@ -170,7 +223,11 @@
     &__menu {
         display: flex;
         align-items: center;
+<<<<<<< HEAD
         @include media.respond(phone) {
+=======
+        @include respond(phone) {
+>>>>>>> dep
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -187,7 +244,11 @@
             transition: all 0.5s ease-in-out;
         }
 
+<<<<<<< HEAD
         @include media.respond(tab-port) {
+=======
+        @include respond(tab-port) {
+>>>>>>> dep
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -207,11 +268,19 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+<<<<<<< HEAD
            @include media.respond(phone) {
             width: 100%;
            }
 
            @include media.respond(tab-port) {
+=======
+           @include respond(phone) {
+            width: 100%;
+           }
+
+           @include respond(tab-port) {
+>>>>>>> dep
             width: 100%;
            }
         }
@@ -220,8 +289,13 @@
     a {
         text-decoration: none;
         color: #1c1c1c;
+<<<<<<< HEAD
         font-size: var.$font-size-xs;
         font-weight: var.$font-weight-bold;
+=======
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+>>>>>>> dep
     }
 }
 
@@ -231,12 +305,20 @@
     cursor: pointer;
     display: none;
 
+<<<<<<< HEAD
     @include media.respond(phone) {
+=======
+    @include respond(phone) {
+>>>>>>> dep
         display: block;
         font-size: 2rem;
     }
 
+<<<<<<< HEAD
     @include media.respond(tab-port) {
+=======
+    @include respond(tab-port) {
+>>>>>>> dep
         display: block;
     }
 
@@ -280,7 +362,11 @@ nav {
     transition: all 0.5s ease-in-out;
 
     &:hover {
+<<<<<<< HEAD
         color: var.$secondary-color;
+=======
+        color: $secondary-color;
+>>>>>>> dep
     }
 }
 

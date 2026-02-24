@@ -34,9 +34,16 @@
 !/app/assets/builds/.keep
 
 /node_modules
+<<<<<<< HEAD
 /.env*
 .env
+=======
+>>>>>>> dep
 
 # Ignore key files for decrypting credentials and more.
 /config/*.key
 
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> dep

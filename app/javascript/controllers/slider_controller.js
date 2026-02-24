@@ -4,7 +4,10 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   connect() {
     this.imageSlider();
+<<<<<<< HEAD
     console.log("Slider");
+=======
+>>>>>>> dep
   }
 
   imageSlider() {

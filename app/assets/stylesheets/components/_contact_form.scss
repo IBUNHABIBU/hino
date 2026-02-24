@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
 @use '../mixins/media' as media;
+=======
+@use '../mixins/media' as *;
+@use '../config/variables' as *;
+>>>>>>> dep
 
 .contact-header {
   font-size: 2rem;
@@ -16,7 +21,11 @@
   height: 80vh;
   padding: 2rem;
 
+<<<<<<< HEAD
   @include media.respond(phone) {
+=======
+  @include respond(phone) {
+>>>>>>> dep
     height: 120vh;
     flex-wrap: wrap;
   }
@@ -74,6 +83,7 @@
       }
 
       .main {
+<<<<<<< HEAD
         background-color: var.$main-color;
       }
 
@@ -83,6 +93,17 @@
 
       .tertiary {
         background-color: var.$color-tertiary;
+=======
+        background-color: $main-color;
+      }
+
+      .sec {
+        background-color: $secondary-color;
+      }
+
+      .tertiary {
+        background-color: $color-tertiary;
+>>>>>>> dep
       
       }
 

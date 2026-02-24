@@ -2,9 +2,13 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
+<<<<<<< HEAD
 import { application } from "controllers/application"
 import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
 eagerLoadControllersFrom("controllers", application)
+=======
+import { application } from "./application"
+>>>>>>> dep
 
 import HomeController from "./home_controller"
 application.register("home", HomeController)
@@ -19,4 +23,8 @@ import SliderController from "./slider_controller"
 application.register("slider", SliderController)
 
 import ToastController from "./toast_controller"
+<<<<<<< HEAD
 application.register("toast", ToastController)
+=======
+application.register("toast", ToastController)
+>>>>>>> dep

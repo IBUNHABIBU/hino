@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
 
 footer {
@@ -7,6 +8,18 @@ footer {
 }
 .interesting-infos {
     background-color: var.$main-color;
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+
+footer {
+    h3 {
+        color: $secondary-color;
+    }
+}
+.interesting-infos {
+    background-color: $main-color;
+>>>>>>> dep
     color: #fff;
     padding: 30px;
 }
@@ -35,12 +48,20 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px;
+<<<<<<< HEAD
     font-size: var.$font-size-xs;
+=======
+    font-size: $font-size-xs;
+>>>>>>> dep
 }
 
 
 .footer-section p {
+<<<<<<< HEAD
     font-size: var.$font-size-xs;
+=======
+    font-size: $font-size-xs;
+>>>>>>> dep
 }
 
 .footer-top {
@@ -53,7 +74,11 @@ footer {
     margin-bottom: 4rem;
     padding: 2rem;
 
+<<<<<<< HEAD
     background-image: linear-gradient(to right, var.$color-tertiary 50%, transparent 50%);
+=======
+    background-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%);
+>>>>>>> dep
     background-size: 140% 0.4rem; /* Adjust the thickness of the underline */
     background-position: 100% 100%; /* Align the underline to the bottom */
     background-repeat: no-repeat;
@@ -67,7 +92,11 @@ footer {
             font-size: 1.5rem;
 
             &:hover {
+<<<<<<< HEAD
                 color: var.$color-tertiary;
+=======
+                color: $color-tertiary;
+>>>>>>> dep
             }
         }
     }
@@ -82,14 +111,22 @@ footer {
         font-size: 1.5rem;
         border-radius: 50%;
         padding: 1rem;
+<<<<<<< HEAD
         border: 0.2rem solid var.$color-tertiary;
+=======
+        border: 0.2rem solid $color-tertiary;
+>>>>>>> dep
      }
 
      span {
         font-size: 1rem;
 
         a {
+<<<<<<< HEAD
             color: var.$color-tertiary;
+=======
+            color: $color-tertiary;
+>>>>>>> dep
             font-size: 2rem;
         }
      }
@@ -108,7 +145,11 @@ footer {
         background-color: rgba(255, 255, 255, 0.523);
     }
     a {
+<<<<<<< HEAD
         color: var.$color-tertiary;
+=======
+        color: $color-tertiary;
+>>>>>>> dep
         font-size: 0.7rem;
     }
 }

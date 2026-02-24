@@ -16,6 +16,7 @@
     </div>
   
     <div id="item-2">
+<<<<<<< HEAD
       <% if ourservice.images.attached? %>
       # <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
       <% end %>
@@ -30,6 +31,23 @@
   <div class="pdf" >
     <% @ourservice.pdf_files.each do |pdf| %>
       <iframe src="<%= rails_blob_path(pdf, disposition: 'inline') %>#toolbar=0"  width="100%" height="600px" frameborder="1"></iframe>
+=======
+    <% if ourservice.images.attached? %>
+    # <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
+    <% end %>
+    </div>
+  
+    <div id="item-3">
+    <% if ourservice.images.attached? %>
+    <%= image_tag rails_blob_path(ourservice.images[2]), class: "slder__img" %>
+    <% end %>
+    </div>
+  
+  </div>
+  <div class="pdf" >
+    <% @ourservice.pdf_files.each do |pdf| %>
+      <iframe src="<%= rails_blob_path(pdf, disposition: 'inline') %>" width="100%" height="600px" frameborder="1"></iframe>
+>>>>>>> dep
     <% end %>
   </div>
 </div>

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @use '../mixins/media';
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+>>>>>>> dep
 
 .service-show {
   // background-color: $secondary-color;
@@ -17,7 +22,11 @@
     box-shadow: -1px 0px 7px -1px rgba(163, 163, 163, 0.75);
     border-top: 0.1px solid rgba(229, 229, 229, 0.45);
 
+<<<<<<< HEAD
     @include media.respond(phone) {
+=======
+    @include respond(phone) {
+>>>>>>> dep
       grid-template-columns: 1fr;
       height: 100vh;
     }
@@ -134,6 +143,7 @@ transition: background-color 0.3s ease;
 }
 
 .pdf {
+<<<<<<< HEAD
   width: 96%;
   margin: 24rem auto 0;
 
@@ -152,3 +162,8 @@ transition: background-color 0.3s ease;
 
 }
 
+=======
+  width: 90%;
+  margin: 0 auto;
+}
+>>>>>>> dep

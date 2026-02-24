@@ -26,7 +26,11 @@ class PartnersController < ApplicationController
 
     respond_to do |format|
       if @partner.save
+<<<<<<< HEAD
         format.html { redirect_to hysan_path, notice: "Partner was successfully created." }
+=======
+        format.html { redirect_to kashg_path, notice: "Partner was successfully created." }
+>>>>>>> dep
         format.json { render :show, status: :created, location: @partner }
       else
         format.html { render :new, status: :unprocessable_entity }

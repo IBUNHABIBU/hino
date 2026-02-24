@@ -1,0 +1,2 @@
+CREATE DATABASE hino_production;
+CREATE DATABASE hino_production_queue;

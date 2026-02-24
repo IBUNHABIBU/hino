@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @use './variables' as var;
+=======
+@use '../config/variables' as *;
+>>>>>>> dep
 
 *,
 *::before,
@@ -24,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+<<<<<<< HEAD
   color: var.$color-white;
   line-height: var.$line-height-body;
   font-family: var.$font-family-lato;
@@ -31,6 +36,15 @@ body {
   overflow-x: hidden;
   // @include respond(tab-land) {
   //     font-size: 56.25%;
+=======
+  color: $color-white;
+  line-height: $line-height-body;
+  font-family: $font-family-lato;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  // @include respond(tab-land) {
+  //     font-size: 56.25%;  $color-white
+>>>>>>> dep
   // }
 
   // @include respond(tab-port) {
@@ -62,12 +76,21 @@ h3,
 h4,
 h5,
 h6 {
+<<<<<<< HEAD
   color: var.$color-text-header;
   line-height: var.$line-height-headers;
 }
 
 h1 {
   font-size: var.$font-size-xxxl;
+=======
+  color: $color-text-header;
+  line-height: $line-height-headers;
+}
+
+h1 {
+  font-size: $font-size-xxxl;
+>>>>>>> dep
 }
 
 h2 {

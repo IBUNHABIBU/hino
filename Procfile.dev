@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 web: unset PORT && bin/rails server -p 3000
 css:  bin/rails dartsass:watch
+=======
+web: unset PORT && bin/rails server -p 3001
+css:  bin/rails dartsass:watch
+>>>>>>> dep

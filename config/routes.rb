@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'contact-hysan', to: 'contact_form#index', as: 'contact_us'
 
   get 'contact_form/new'
   post 'contact_form/create'
   get 'about-hysan', to: 'about#index', as: 'about_us'
+=======
+  get 'contact_us', to: 'contact_form#index', as: 'contact_us'
+
+  get 'contact_form/new'
+  post 'contact_form/create'
+  get 'about_us', to: 'about#index', as: 'about_us'
+>>>>>>> dep
   resources :partners
   resources :projects
   resources :ourservices
@@ -20,5 +28,9 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+<<<<<<< HEAD
+=======
+  get "up" => "rails/health#show", as: :rails_health_check
+>>>>>>> dep
   root "home#index"
 end

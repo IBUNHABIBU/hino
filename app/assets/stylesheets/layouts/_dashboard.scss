@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+>>>>>>> dep
 
 .dashboard {
     height: 100vh;
@@ -56,7 +61,11 @@ h3 {
 
 .btn--dash {
     border: 2px solid #faddc5;
+<<<<<<< HEAD
     background-color: var.$color-tertiary;
+=======
+    background-color: $color-tertiary;
+>>>>>>> dep
     padding: 0.4rem;
     border-radius: 0.6rem;
     margin-right: 0.5rem;

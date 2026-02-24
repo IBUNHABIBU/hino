@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
 @use '../mixins/media';
+=======
+@use '../config/variables' as *;
+@use '../mixins/media' as *;
+>>>>>>> dep
 
 section {
     scroll-snap-align: start;
@@ -11,8 +16,13 @@ section {
 
     // h1 {
     //     font-weight: 700;
+<<<<<<< HEAD
     //     line-height: var.$line-height-body;
     //     color: var.$color-text-section;
+=======
+    //     line-height: $line-height-body;
+    //     color: $color-text-section;
+>>>>>>> dep
     //     text-transform: uppercase;
     // }
 
@@ -20,27 +30,44 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         gap: var.$space-m;
         padding: var.$space-m;
         background-color: var.$main-color;
 
         @include media.respond(phone) {
+=======
+        gap: $space-m;
+        padding: $space-m;
+        background-color: $main-color;
+
+        @include respond(phone) {
+>>>>>>> dep
             flex-direction: column;
             align-items: flex-end;
         }
 
+<<<<<<< HEAD
         @include media.respond(tab-port) {
+=======
+        @include respond(tab-port) {
+>>>>>>> dep
             flex-direction: column;
             align-items: flex-end;
         }
 
+<<<<<<< HEAD
         @include media.respond(tab-land) {
+=======
+        @include respond(tab-land) {
+>>>>>>> dep
             flex-direction: column;
             align-items: flex-end;
         }
 
         h6 {
             color: white;
+<<<<<<< HEAD
             font-size: var.$font-size-h6;
         }
 
@@ -54,6 +81,21 @@ section {
             }
 
              @include media.respond(tab-land) {
+=======
+            font-size: $font-size-h6;
+        }
+
+        .btn--mob {
+            @include respond(phone) {
+                align-self: flex-end;
+            }
+
+            @include respond(tab-land) {
+                align-self: flex-end;
+            }
+
+             @include respond(tab-land) {
+>>>>>>> dep
                 align-self: flex-end;
             }
         }
@@ -69,6 +111,7 @@ section {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     color: var.$color-tertiary;
 
     &__title {
@@ -77,6 +120,16 @@ section {
         color: var.$color-tertiary;
         padding-bottom: 1rem;
         border-bottom: 0.2rem solid var.$color-tertiary;
+=======
+    color: $color-tertiary;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: $font-size-h6;
+        color: $color-tertiary;
+        padding-bottom: 1rem;
+        border-bottom: 0.2rem solid $color-tertiary;
+>>>>>>> dep
         letter-spacing: 0.5rem;
         padding-top: 2rem;
         width: fit-content;
@@ -97,12 +150,21 @@ section {
             border-radius: 50%; 
             font-size: 2rem;
             padding: 2rem; 
+<<<<<<< HEAD
             color: var.$secondary-color;
         }
 
         h4 {
             font-size: var.$font-size-h6;
             color: var.$secondary-color;
+=======
+            color: $secondary-color;
+        }
+
+        h4 {
+            font-size: $font-size-h6;
+            color: $secondary-color;
+>>>>>>> dep
         }
 
         .content {
@@ -126,8 +188,13 @@ section {
     h4 {
         color: #777;
         margin: 2rem;
+<<<<<<< HEAD
         font-size: var.$font-size-h6;
         border-bottom: 0.28rem solid var.$secondary-color;
+=======
+        font-size: $font-size-h6;
+        border-bottom: 0.28rem solid $secondary-color;
+>>>>>>> dep
         width: fit-content;
         padding-bottom: 1.2rem;
     }

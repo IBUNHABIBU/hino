@@ -4,7 +4,11 @@
 @use "mixins/width_and_height";
 
 // Configuration
+<<<<<<< HEAD
 @use "config/variables";
+=======
+@use "config/variables" as *;
+>>>>>>> dep
 @use "config/reset";
 
 @use "components/button";

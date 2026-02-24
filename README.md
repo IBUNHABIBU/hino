@@ -49,6 +49,47 @@ It has all the features that I need to build a rails project
     - [] Reset password
     - [] Forgot password
     - [] Remember me
+<<<<<<< HEAD
+=======
+    - [] Email confirmation
+    - [] Email notifications
+    - [] OTP authentication, 2FA, 2SV, authenticator app, SMS, email
+
+- [] Clean code, dry, BEM, SASS, loop
+- [x] Mega Menu, footer, sidebar
+- [] Toast notification using hotwire
+- [] site map, geolocation, google navigator etc
+- [x] Responsive design
+- [] Search
+- [] Pagination
+- [] Filter
+- [] Sort
+- [] Rating
+- [] Comment
+- [] Like
+- [] Follow
+- [] Share
+- [] Favorite
+- [] Bookmark
+- [] Upload image
+- [] Upload video
+- [x] Upload audio
+- [x] Upload file
+- [] Well documented Gem file and readme file
+- [] Charts and graph
+- [] Hotwire
+
+### Api end points
+
+<!-- | Endpoint | Description |
+|---------|-------------|
+| `https://final-capstone-rails-api.herokuapp.com/` | baseUrl |
+| `baseUrl/users` | users resource |
+| `baseUrl/logout` | logout |
+| `baseUrl/logged_in` | login |
+| `baseUrl/api/v1/cars` | cars resource |
+| `baseUrl/api/v1/bookings` | bookings resource | -->
+>>>>>>> dep
 
   
 <h3 align="center"> Entity Relationship Diagram (ERD) </h3>
@@ -61,6 +102,10 @@ It has all the features that I need to build a rails project
 This project was built using these technologies.
 * Ruby on Rails
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dep
 ### Requirements
 * Ruby
 * Ruby on Rails
@@ -70,6 +115,10 @@ This project was built using these technologies.
 * Rubocop
 * Capybara
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dep
 ### How to Install 
 
 To run this locally, clone the repository, navigate to its containing directory.
@@ -121,10 +170,16 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 | `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
 
 <!-- ### How to play -->
+<<<<<<< HEAD
+=======
+secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae85a0089d0059bab3e854f015ac9a142c27e0dcaba31b4a8ce17e49eb2c5bc24e99
+
+>>>>>>> dep
 
 ### Challenges
 1. 
 
+<<<<<<< HEAD
 Solution
 
 2.   01 rake aborted!
@@ -133,6 +188,46 @@ Solution
  when doing display none transision will not work
  
  `CREATE DATABASE `;
+=======
+It seems like you're encountering an error related to SSH key authentication with the ed25519 key type in your Ruby application. The error message indicates that the ed25519 gem is missing, which is required for ssh-ed25519 support in net-ssh.
+Solution 
+
+add 
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
+2. 
+You have already activated uri 0.12.1, but your Gemfile requires uri 0.13.0. Prepending `bundle exec` to your command may solve this.
+
+Solution
+
+I removed the uri '0.12.1' in the vps using command 
+
+`gem list uri`
+gem list -d uri
+gem uninstall uri
+gem install uri -v '0.13.0'
+
+2.   01 rake aborted!
+      01 ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
+
+      Solution
+
+      I deleted the credentials.yml.enc
+      and then I created again using the command `EDITOR='code --wait' rails credentias:edit`
+
+3. DEBUG [a7255b43] 	rake aborted!
+ DEBUG [a7255b43] 	ActiveRecord::NoDatabaseError: We could not find your database: kamich. Which can be found in the database configuration file located at config/database.yml.
+
+ solution
+
+ I created the database in the vps using the sql commands
+
+ when doing display none transision will not work
+ 
+ `CREATE DATABASE kamich`;
+
+>>>>>>> dep
 
 
 ## Live link
@@ -151,6 +246,10 @@ Solution
 
 Give a :star: if you like this project!
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dep
 ## Acknowledgements
 Credits go to 
 - [Mr Eric Mbouwe](https://github.com/EricMbouwe), [Emmanuel Kamala](https://github.com/emmanuelkamala) and [Marcelo Araújo](https://github.com/marcelomaidden)(Microverse students) for their help to resolve the bugs.
@@ -176,7 +275,11 @@ This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 server {
 
+<<<<<<< HEAD
   server_name habibtech.online www.habibtech.online;
+=======
+  server_name kamich.darlive.cyou www.kamich.darlive.cyou;
+>>>>>>> dep
   root /home/deploy/colabapi/current/public;
 
   passenger_enabled on;
@@ -195,11 +298,23 @@ server {
     gzip_static on;
   }
 
+<<<<<<< HEAD
+=======
+    listen [::]:443 ssl; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/colabapi.darlive.cyou/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/colabapi.darlive.cyou/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+>>>>>>> dep
 
 ## toast notification 
 
     https://bbbootstrap.com/snippets/toast-notification-close-button-27153346
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dep
     Client content
 
     1.  Quality control equipment in food and beverage, Lab chemicals and allied products. 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use '../config/variables' as var;
 @use '../mixins/width_and_height' as dimension;
 
@@ -5,11 +6,24 @@
     position: relative;
     @include dimension.width_and_height(60%, 60vh);
     background-color: var.$color-tertiary;
+=======
+@use '../mixins/width_and_height' as *;
+@use '../config/variables' as *;
+
+.form {
+    position: relative;
+    @include width_and_height(60%, 60vh);
+    background-color: $color-tertiary;
+>>>>>>> dep
     overflow: hidden;
     margin: 1rem auto;
 
     &--mid {
+<<<<<<< HEAD
         @include dimension.width_and_height(30%, 74vh);
+=======
+        @include width_and_height($height:74vh);
+>>>>>>> dep
     }
 
     &::before {
@@ -17,9 +31,15 @@
         position: absolute;
         top: -50%;
         left: -50%;
+<<<<<<< HEAD
         width: var.$form-width;
         height: var.$form-height;
         background: linear-gradient(0deg, transparent, transparent, var.$color-text-section, var.$color-text-section);
+=======
+        width: $form-width;
+        height: $form-height;
+        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+>>>>>>> dep
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
     }
@@ -29,9 +49,15 @@
         position: absolute;
         top: -50%;
         left: -50%;
+<<<<<<< HEAD
         width: var.$form-width;
         height: var.$form-height;
         background: linear-gradient(0deg, transparent, transparent, var.$color-text-section, var.$color-text-section);
+=======
+        width: $form-width;
+        height: $form-height;
+        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+>>>>>>> dep
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
         animation-delay: -3s;
@@ -40,7 +66,11 @@
     &__container {
         position: absolute;
         inset: 2px;
+<<<<<<< HEAD
         background-color: var.$color-tertiary;
+=======
+        background-color: $color-tertiary;
+>>>>>>> dep
         border-radius: 8px;
         z-index: 10;
         padding: 40px 50px;
@@ -66,7 +96,11 @@
                 background: transparent;
                 border: none;
                 outline: none;
+<<<<<<< HEAD
                 color: var.$color-input;
+=======
+                color: $color-input;
+>>>>>>> dep
                 font-size: 1.2rem;
                 letter-spacing: 0.05rem;
                 z-index: 10;
@@ -91,7 +125,11 @@
                         span {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
+<<<<<<< HEAD
                             color: var.$color-text-section;
+=======
+                            color: $color-text-section;
+>>>>>>> dep
                         }
                         i {
                             height: 90%;
@@ -109,7 +147,11 @@
                 padding: 20px 10px 10px;
                 font-size: 1em;
                 pointer-events: none;
+<<<<<<< HEAD
                 color: var.$color-text-muted;
+=======
+                color: $color-text-muted;
+>>>>>>> dep
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
@@ -119,7 +161,11 @@
                 padding: 20px 10px 10px;
                 font-size: 1em;
                 pointer-events: none;
+<<<<<<< HEAD
                 color: var.$color-text-muted;
+=======
+                color: $color-text-muted;
+>>>>>>> dep
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
@@ -131,7 +177,11 @@
                 bottom: 0;
                 width: 100%;
                 height: 2px;
+<<<<<<< HEAD
                 background-color: var.$color-text-section;
+=======
+                background-color: $color-text-section;
+>>>>>>> dep
                 border-radius: 4px;
                 transition: 0.5s;
                 pointer-events: none;
@@ -147,10 +197,17 @@
             a {
                 margin: 10px 0;
                 font-size: 1rem;
+<<<<<<< HEAD
                 color: var.$color-text-muted;
 
                 &:hover, &:nth-child(2) {
                     color: var.$color-text-section;
+=======
+                color: $color-text-muted;
+
+                &:hover, &:nth-child(2) {
+                    color: $color-text-section;
+>>>>>>> dep
                 }
             }
         }
