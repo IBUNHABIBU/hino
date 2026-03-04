@@ -21,7 +21,7 @@ proxy:
   ssl: true
   host: ecohygiene.co.tz
   # Proxy connects to your container on port 80 by default.
-  app_port: 3000
+  app_port: 80
 
 # Credentials for your image host.
 registry:
