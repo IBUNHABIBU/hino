@@ -15,6 +15,7 @@
   align-items: flex-start;
   height: 80vh;
   padding: 2rem;
+  background-color: #ececec;
 
   @include respond(phone) {
     height: 120vh;
