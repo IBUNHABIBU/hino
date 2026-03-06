@@ -90,3 +90,4 @@ gem "groupdate", "~> 6.7"
 gem "chartkick", "~> 5.2"
 
 gem "dockerfile-rails", ">= 1.7", :group => :development
+gem "font-awesome-sass", "~> 6.0"

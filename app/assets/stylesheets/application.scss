@@ -3,6 +3,7 @@
 @use "mixins/media";
 @use "mixins/width_and_height";
 
+
 // Configuration
 @use "config/variables" as *;
 @use "config/reset";
@@ -21,3 +22,14 @@
 @use 'layouts/footer';
 @use 'layouts/service-show';
 @use 'layouts/dashboard';
+
+// app/assets/stylesheets/application.scss
+
+body {
+  background-color: red;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
