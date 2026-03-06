@@ -69,14 +69,14 @@ Rails.application.configure do
   #   authentication: :plain
   # }
 
-  config.action_mailer.default_url_options = { host: "kilimarvellous.com", protocol: "https" }
+  config.action_mailer.default_url_options = { host: "ecohygiene.site", protocol: "https" }
 
 config.action_mailer.delivery_method = :smtp
 
 config.action_mailer.smtp_settings = {
   address:              "smtp.gmail.com",
   port:                 587,
-  domain:               "kilimarvellous.com",
+  domain:               "ecohygiene.site",
   user_name:            ENV["SMTP_USERNAME"], # better to store in credentials or env vars
   password:             ENV["SMTP_PASSWORD"],
   authentication:       "plain",
