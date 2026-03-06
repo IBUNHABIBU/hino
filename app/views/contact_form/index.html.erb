@@ -1,53 +1,55 @@
-<h1 class="contact-header">Get in touch</h1>
-
-<div class="contact-container">
-  <div class="contact-form">
-  <%= form_for(@message, url: contact_form_create_path, method: :post, html: { class: "fm" }) do |form|%>
-     
-      <%= render "shared/errors", object: @message %>
-      
-      <div class="form__field">
-        <%= form.label :name, class: "form__label" %>
-        <%= form.text_field :name, required: true, class: "form__input" %>
-      </div>
-
-      <div class="form__field">
-        <%= form.label :email, class: "form__label" %>
-        <%= form.email_field :email, required: true, class: "form__input" %>
-      </div>
-
-      <div class="form__field">
-        <%= form.label :subject, class: "form__label" %>
-        <%= form.text_field :subject, required: true, class: "form__input" %>
-      </div>
-
-      <div class="form__field">
-        <%= form.label :body, class: "form__label" %>
-        <%= form.text_area :body, required: true, class: "form__textarea" %>
-      </div>
-
-      <div class="form__actions">
-        <%= form.submit "Send Message", class: "form__submit tertiary f-1" %>
-      </div>
-    <% end %>
-  </div>
-
-  <div class="contact-address">
-    <p class="contact-address__info">
-      Other ways to contact us<br>
-      You can reach us through the following address<br>
-      <strong>Address:</strong><br>
-      Sido Shinyanga, Tabora Road<br>
-      Ibinzamata Area, Plot no. 2, Block Y,<br>
-      P. O. BOX 8804 Shinyanga<br>
-     Tanzania<br><br>
-      <strong>Contact:</strong><br>
-            ecoconsult@ecohygiene.co.tz <br><br>
-            0685325766<br><br>
-      <strong>Opening Hours:</strong><br>
-      Mo-Fr: 8:00-19:00<br>
-      Sa: 8:00-14:00<br>
-      Su: closed
-    </p>
+<div class="contact">
+  <h1 class="contact-header">Get in touch</h1>
+  
+  <div class="contact-container">
+    <div class="contact-form">
+    <%= form_for(@message, url: contact_form_create_path, method: :post, html: { class: "fm" }) do |form|%>
+  
+        <%= render "shared/errors", object: @message %>
+  
+        <div class="form__field">
+          <%= form.label :name, class: "form__label" %>
+          <%= form.text_field :name, required: true, class: "form__input" %>
+        </div>
+  
+        <div class="form__field">
+          <%= form.label :email, class: "form__label" %>
+          <%= form.email_field :email, required: true, class: "form__input" %>
+        </div>
+  
+        <div class="form__field">
+          <%= form.label :subject, class: "form__label" %>
+          <%= form.text_field :subject, required: true, class: "form__input" %>
+        </div>
+  
+        <div class="form__field">
+          <%= form.label :body, class: "form__label" %>
+          <%= form.text_area :body, required: true, class: "form__textarea" %>
+        </div>
+  
+        <div class="form__actions">
+          <%= form.submit "Send Message", class: "form__submit tertiary f-1" %>
+        </div>
+      <% end %>
+    </div>
+  
+    <div class="contact-address">
+      <p class="contact-address__info">
+        Other ways to contact us<br>
+        You can reach us through the following address<br>
+        <strong>Address:</strong><br>
+        Sido Shinyanga, Tabora Road<br>
+        Ibinzamata Area, Plot no. 2, Block Y,<br>
+        P. O. BOX 8804 Shinyanga<br>
+       Tanzania<br><br>
+        <strong>Contact:</strong><br>
+              ecoconsult@ecohygiene.co.tz <br><br>
+              0685325766<br><br>
+        <strong>Opening Hours:</strong><br>
+        Mo-Fr: 8:00-19:00<br>
+        Sa: 8:00-14:00<br>
+        Su: closed
+      </p>
+    </div>
   </div>
 </div>

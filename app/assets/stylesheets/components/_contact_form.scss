@@ -9,13 +9,16 @@
   color: #333;
 }
 
+.contact {
+  // background-color: #ececec;
+}
+
 .contact-container {
   display: flex;
   justify-content:space-around;
   align-items: flex-start;
   height: 80vh;
   padding: 2rem;
-  background-color: #ececec;
 
   @include respond(phone) {
     height: 120vh;
