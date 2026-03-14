@@ -5,7 +5,7 @@
     <div id="item-0">
        <div class="service-show__img">
        <% if ourservice.images.attached? %>
-         <%= image_tag rails_blob_path(ourservice.images[0]), class: "slder__img" %>
+         <%= image_tag ourservice.images.first, class: "slder__img" %>
        <% end %>
        </div>
     </div>
@@ -17,13 +17,13 @@
   
     <div id="item-2">
     <% if ourservice.images.attached? %>
-    # <%= image_tag rails_blob_path(ourservice.images[1]), class: "slder__img" %>
+    # <%= image_tag ourservice.images.second, class: "slder__img" %>
     <% end %>
     </div>
   
     <div id="item-3">
     <% if ourservice.images.attached? %>
-    <%= image_tag rails_blob_path(ourservice.images[2]), class: "slder__img" %>
+    <%= image_tag ourservice.images.third, class: "slder__img" %>
     <% end %>
     </div>
   
