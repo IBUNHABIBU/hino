@@ -4,7 +4,7 @@
   
     <div id="item-0">
        <div class="service-show__img">
-       <% if ourservice.images.present? %>
+       <% if ourservice.images.first.present? %>
          <%= image_tag ourservice.images.first, class: "slder__img" %>
        <% end %>
        </div>
@@ -16,13 +16,13 @@
     </div>
   
     <div id="item-2">
-    <% if ourservice.images.present? %>
+    <% if ourservice.images.second.present? %>
     <%= image_tag ourservice.images.second, class: "slder__img" %>
     <% end %>
     </div>
   
     <div id="item-3">
-    <% if ourservice.images.present? %>
+    <% if ourservice.images.third.present? %>
     <%= image_tag ourservice.images.third, class: "slder__img" %>
     <% end %>
     </div>
