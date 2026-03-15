@@ -1,147 +1,5 @@
-@use '../config/variables' as *;
-@use '../mixins/media' as *;
-
-// .service-show {
-//   // background-color: $secondary-color;
-//   margin: 3rem 1rem;
-
-//   .container {
-//     width: 80%;
-//     margin: 0 auto;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-gap: 2rem;
-//     padding: 2rem;
-//     height: 60vh;
-//     -webkit-box-shadow: -1px 0px 7px -1px rgba(185, 185, 185, 0.75);
-//     -moz-box-shadow: -1px 0px 7px -1px rgba(182, 182, 182, 0.75);
-//     box-shadow: -1px 0px 7px -1px rgba(163, 163, 163, 0.75);
-//     border-top: 0.1px solid rgba(229, 229, 229, 0.45);
-
-//     @include respond(phone) {
-//       grid-template-columns: 1fr;
-//       height: 100vh;
-//     }
-
-//   }
-
-//   &__img {
-//     height: 100%;
-
-//     img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//     }
-//   }
-
-// }
-
-// .actions {
-//   margin-top: 20px;
-
-//   .btn {
-//     margin-right: 10px;
-//     padding: 8px 16px;
-//     text-decoration: none;
-//     color: #fff;
-//     background-color: #007bff;
-//     border: none;
-//     border-radius: 4px;
-//     cursor: pointer;
-//     transition: background-color 0.3s ease;
-
-//     &:hover {
-//       background-color: #0056b3;
-//     }
-//   }
-
-//   .btn--danger {
-//     background-color: #dc3545;
-
-//     &:hover {
-//       background-color: #c82333;
-//     }
-//   }
-// }
-
-// .angry-grid {
-//    display: grid; 
-
-//    grid-template-rows: repeat(2, 1fr);
-//    grid-template-columns: repeat(5, 1fr);
-   
-//    gap: 0px;
-//    height: 80vh;
-
-//    width: 96%;
-//    margin: 0 auto;
-  
-//    -webkit-box-shadow: -1px 0px 7px -1px rgba(185, 185, 185, 0.75);
-//    -moz-box-shadow: -1px 0px 7px -1px rgba(182, 182, 182, 0.75);
-//    box-shadow: -1px 0px 7px -1px rgba(163, 163, 163, 0.75);
-//    border-top: 0.1px solid rgba(229, 229, 229, 0.45);
-   
-// }
-  
-// #item-0 {
-//  grid-row: 1/ -1;
-//  grid-column: 3/-1;
-// }
-
-// #item-1 {
-//    grid-row: 2/ 3;
-//    grid-column: 1/3;
-//    padding: 1rem;
-   
-//    h1 {
-//     font-size: 24px;
-//     color: #555;
-//     margin-top: 10px;
-//   }
-
-//   p {
-//     font-size: 16px;
-//     color: #777;
-//     margin-top: 10px;
-//   }
-   
-// }
-
-// #item-2 {
-//    grid-row: 1/2;
-//    grid-column: 1 /span 2;
-   
-// }
-
-// #item-3 {
-//     grid-row: 1/2;
-//     grid-column: 2/ span 1;
-//    padding: 1rem;
-// }
-
-
-// .read-more {
-// display: inline-block;
-// padding: 10px 20px;
-// background-color: #007bff; /* Blue color, you can change it */
-// color: #fff; /* White text */
-// border: none;
-// border-radius: 5px;
-// text-decoration: none;
-// font-size: 16px;
-// cursor: pointer;
-// transition: background-color 0.3s ease;
-// }
-
-// .pdf {
-//   width: 90%;
-//   margin: 0 auto;
-// }
-
-// _variables.scss (optional variables file)
+// _variables.scss
 $primary-color: #3498db;
-$secondary-color: #2ecc71;
 $danger-color: #e74c3c;
 $text-color: #333;
 $light-bg: #f5f6fa;
@@ -197,23 +55,19 @@ $spacing-unit: 1rem;
 
     &--danger {
       background: $danger-color;
+      margin-left: auto; // Pushes delete button to the right
       
       &:hover {
         background: darken($danger-color, 10%);
         box-shadow: 0 4px 12px rgba($danger-color, 0.3);
       }
     }
-
-    // Add margin for the pipe separator
-    & + .btn {
-      margin-left: $spacing-unit;
-    }
   }
 
   // Style the pipe separator
-  .btn + .btn:not(.btn--danger)::before {
+  .btn:not(.btn--danger):not(:last-child)::after {
     content: "|";
-    margin-right: $spacing-unit;
+    margin-left: $spacing-unit;
     color: #ccc;
   }
 }
@@ -226,25 +80,29 @@ $spacing-unit: 1rem;
 
 .angry-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr; // Three equal columns
+  grid-template-rows: auto auto; // Two rows
   gap: $spacing-unit * 2;
   margin-bottom: $spacing-unit * 3;
 
   #item-0 {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-column: 1; // First column
+    grid-row: 1; // First row
   }
 
   #item-1 {
-    grid-area: 1 / 2 / 2 / 4;
+    grid-column: 2 / 4; // Spans columns 2 and 3
+    grid-row: 1; // First row
   }
 
   #item-2 {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-column: 1; // First column
+    grid-row: 2; // Second row
   }
 
   #item-3 {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-column: 2; // Second column
+    grid-row: 2; // Second row
   }
 }
 
@@ -290,6 +148,13 @@ $spacing-unit: 1rem;
   background: $light-bg;
   border-radius: $border-radius;
   
+  h2 {
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+    color: $text-color;
+    font-size: 1.5rem;
+  }
+  
   iframe {
     border: 2px solid white;
     border-radius: $border-radius;
@@ -302,17 +167,30 @@ $spacing-unit: 1rem;
   }
 }
 
-// Responsive design
+// Mobile responsive
 @media (max-width: 768px) {
   .angry-grid {
-    grid-template-columns: 1fr;
-    gap: $spacing-unit;
+    grid-template-columns: 1fr; // Single column
+    grid-template-rows: auto; // Auto rows
     
-    #item-0,
-    #item-1,
-    #item-2,
+    #item-0 {
+      grid-column: 1;
+      grid-row: auto;
+    }
+    
+    #item-1 {
+      grid-column: 1;
+      grid-row: auto;
+    }
+    
+    #item-2 {
+      grid-column: 1;
+      grid-row: auto;
+    }
+    
     #item-3 {
-      grid-area: auto;
+      grid-column: 1;
+      grid-row: auto;
     }
   }
 
@@ -321,15 +199,16 @@ $spacing-unit: 1rem;
     align-items: stretch;
     
     .btn {
-      margin: 0 !important;
+      margin: 0;
+      text-align: center;
       
-      & + .btn {
-        margin-left: 0 !important;
+      &--danger {
+        margin-left: 0;
       }
-      
-      & + .btn:not(.btn--danger)::before {
-        content: none;
-      }
+    }
+    
+    .btn:not(.btn--danger):not(:last-child)::after {
+      content: none;
     }
   }
 
@@ -348,7 +227,7 @@ $spacing-unit: 1rem;
   }
 }
 
-// Optional: Add animation for page load
+// Animation
 .ourservice-details {
   animation: fadeIn 0.5s ease;
 }
