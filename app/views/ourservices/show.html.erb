@@ -1,7 +1,8 @@
 <div class="ourservice-details">
   <%= render @ourservice %>
-
+<% if current_user %>
   <strong class="created-by"> Created by <%= @ourservice.user.email %> </strong>
+<% end %>
 </div>
 
 <% if current_user %>
