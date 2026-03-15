@@ -5,6 +5,7 @@ export default class extends Controller {
   connect() {
     this.hide()
     this.unhide()
+    console.log("hello world");
   }
 
   hide() {
