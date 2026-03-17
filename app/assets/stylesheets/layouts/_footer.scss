@@ -65,7 +65,7 @@ footer {
     // Address section styling to match your design
     .footer-address {
         p {
-            font-size: $font-size-xs;
+            font-size: 1rem;
             margin-bottom: 1rem;
             line-height: 1.6;
             
@@ -93,7 +93,6 @@ footer {
             
             strong {
                 color: $secondary-color;
-                display: block;
                 margin-bottom: 0.3rem;
                 font-size: $font-size-xs;
             }
@@ -306,6 +305,6 @@ footer {
     }
     
     .footer-section {
-        flex: 1 1 300px;
+        flex: 1 1 40px;
     }
 }
