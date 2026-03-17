@@ -2,26 +2,32 @@
   <div class="angry-grid">
     <div id="item-0">
       <div class="service-show__img">
-        <% if @ourservice.images.first.present? %>
-          <%= image_tag @ourservice.images.first, class: "slder__img" %>
+        <% if ourservice.images.first.present? %>
+          <%= image_tag ourservice.images.first, class: "slder__img" %>
         <% end %>
       </div>
     </div>
   
     <div id="item-1">
-      <h1><%= @ourservice.Title %></h1>
-      <p><%= @ourservice.description %></p>
+      <h1><%= ourservice.Title %></h1>
+      <p><%= ourservice.description %></p>
     </div>
   
     <div id="item-2">
-      <% if @ourservice.images.second.present? %>
-        <%= image_tag @ourservice.images.second, class: "slder__img" %>
+      <% if ourservice.images.second.present? %>
+        <%= image_tag ourservice.images.second, class: "slder__img" %>
       <% end %>
     </div>
   
     <div id="item-3">
-      <% if @ourservice.images.third.present? %>
-        <%= image_tag @ourservice.images.third, class: "slder__img" %>
+      <% if ourservice.images.third.present? %>
+        <%= image_tag ourservice.images.third, class: "slder__img" %>
+      <% end %>
+    </div>
+
+     <div id="item-3">
+      <% if ourservice.images[3].present? %>
+        <%= image_tag ourservice.images[3], class: "slder__img" %>
       <% end %>
     </div>
   </div>

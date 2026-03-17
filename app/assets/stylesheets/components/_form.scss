@@ -19,7 +19,7 @@
         left: -50%;
         width: $form-width;
         height: $form-height;
-        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+        background: linear-gradient(0deg, transparent, transparent, #e97e20, #00328b); // Orange to Blue gradient
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
     }
@@ -31,7 +31,7 @@
         left: -50%;
         width: $form-width;
         height: $form-height;
-        background: linear-gradient(0deg, transparent, transparent, $color-text-section, $color-text-section);
+        background: linear-gradient(0deg, transparent, transparent, #2f970b, #e97e20); // Green to Orange gradient
         transform-origin: bottom right;
         animation: animate 6s linear infinite;
         animation-delay: -3s;
@@ -59,7 +59,8 @@
             width: 300px;
             margin-top: 25px;
 
-            input {
+            // Styles for both input and textarea
+            input, textarea {
                 position: relative;
                 width: 100%;
                 padding: 20px 10px 10px;
@@ -70,40 +71,52 @@
                 font-size: 1.2rem;
                 letter-spacing: 0.05rem;
                 z-index: 10;
+                font-family: inherit;
+                resize: vertical;
+                min-height: 40px;
 
                 &:focus {
-                    ~{
-                        span {
+                    ~ {
+                        span, label {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
-                            color: white;
+                            color: #00328b; // Dark blue on focus
                         }
                         i {
                             height: 90%;
+                            background: linear-gradient(90deg, #00328b, #e97e20); // Blue to Orange gradient
                         }
-                       
                     }
-
                 }
 
                 &:valid {
-                    ~{
-                        span {
+                    ~ {
+                        span, label {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
-                            color: $color-text-section;
+                            color: #2f970b; // Green when valid
                         }
                         i {
                             height: 90%;
+                            background: linear-gradient(90deg, #2f970b, #00328b); // Green to Blue gradient
                         }
-                       
                     }
-
                 }
+            }
 
-              
+            // Specific styles for textarea
+            textarea {
+                padding-top: 25px; // Extra padding for better alignment
+                
+                &:focus ~ span,
+                &:focus ~ label,
+                &:valid ~ span,
+                &:valid ~ label {
+                    transform: translateX(-10px) translateY(-40px); // Move up more for textarea
+                }
             }
-            span {
+
+            span, label {
                 position: absolute;
                 left: 0;
                 padding: 20px 10px 10px;
@@ -113,17 +126,12 @@
                 letter-spacing: 0.05rem;
                 transition: 0.5s;
             }
-            label {
-                position: absolute;
-                left: 0;
-                padding: 20px 10px 10px;
-                font-size: 1em;
-                pointer-events: none;
-                color: $color-text-muted;
-                letter-spacing: 0.05rem;
-                transition: 0.5s;
+
+            // Specific positioning for textarea label
+            textarea ~ span,
+            textarea ~ label {
+                padding: 25px 10px 10px; // Adjusted for textarea
             }
-            
 
             i {
                 position: absolute;
@@ -131,13 +139,12 @@
                 bottom: 0;
                 width: 100%;
                 height: 2px;
-                background-color: $color-text-section;
+                background-color: #e97e20; // Orange default
                 border-radius: 4px;
                 transition: 0.5s;
                 pointer-events: none;
                 z-index: 9;
             }
-           
         }
 
         .links {
@@ -149,14 +156,23 @@
                 font-size: 1rem;
                 color: $color-text-muted;
 
-                &:hover, &:nth-child(2) {
-                    color: $color-text-section;
+                &:hover {
+                    color: #e97e20; // Orange on hover
+                }
+                
+                &:nth-child(2) {
+                    color: #00328b; // Blue for second link
+                    
+                    &:hover {
+                        color: #2f970b; // Green on hover
+                    }
                 }
             }
         }
     }
 }
 
+// Animation keyframes
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -164,11 +180,4 @@
     100% {
         transform: rotate(360deg);
     }
-}
-
-.flash.alert {
-    color: white;
-    z-index: 100;
-    font-weight: bolder;
-    font-size: 1.6rem;
 }
