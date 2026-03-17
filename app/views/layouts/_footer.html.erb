@@ -1,50 +1,107 @@
 <footer class="interesting-infos">
     <div class="footer-top">
         <div class="logo">
-          <%= image_tag "logo.ico", alt: "Logo", width: "100", height: "100" %>
+          <%= image_tag "logo.ico", alt: "Ecohygiene Logo", width: "100", height: "100" %>
         </div>
-        <div class="contact ">
+        
+        <div class="contact">
             <i class="fa-solid fa-message"></i>
-            <span>Have a question? <br>
-            <a href="tel:123-456-7890">+255 685325766</a></span>
+            <span>
+                Have a question? <br>
+                <a href="tel:+255685325766"><%= footer_contact_info[:phone][:display] %></a>
+            </span>
         </div>
+        
         <div class="social">
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <% footer_social_links.each do |social| %>
+                <a href="<%= social[:url] %>" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="<%= social[:label] %>">
+                    <i class="fa-brands <%= social[:icon] %>"></i>
+                </a>
+            <% end %>
         </div>
     </div>
+    
     <div class="footer-content">
-        <div class="footer-section">
-            <h3>INTERESTING INFOS</h3>
-            <p>We seek to survive market conditions and contribute immensely to the economic growth of the country.</p>
-        </div>
-
-       
-     
-        <div class="footer-section">
-            <h3>ECOHYGIENE COMPANY LTD</h3>
-            <p>Sido Shinyanga, Tabora Road<br>
-      Ibinzamata Area, Plot no. 2, Block Y,<br>
-      P. O. BOX 8804, Shinyanga<br></p>
-            <p>Tel: 0685325766<br>
-            directors@ecohygiene.co.tz
-            <br>
-            <p>OFFICE HOURS<br>24/7</p>
-        </div>
-        <div class="footer-section">
-            <h3>LATEST PROJECTS</h3>
-            <ul>
-                <li>Opening of new mixing setup at Shinyanga region</li>
-            </ul>
-        </div>
+        <% footer_sections.each do |section| %>
+            <div class="footer-section">
+                <h3><%= section[:title] %></h3>
+                
+                <% case section[:type] %>
+                <% when 'text' %>
+                    <p><%= section[:content] %></p>
+                    
+                <% when 'links' %>
+                    <ul class="quick-links">
+                        <% section[:content].each do |link| %>
+                            <li>
+                                <%= link_to link[:name], 
+                                            send(link[:path]), 
+                                            class: "footer-link" %>
+                            </li>
+                        <% end %>
+                    </ul>
+                    
+                <% when 'address' %>
+                    <% info = section[:content] %>
+                    <div class="footer-address">
+                        <p>
+                            <i class="fa-solid <%= info[:address][:icon] %>"></i>
+                            <%= info[:address][:line1] %><br>
+                            <%= info[:address][:line2] %><br>
+                            <%= info[:address][:line3] %>
+                        </p>
+                        
+                        <p>
+                            <i class="fa-solid <%= info[:phone][:icon] %>"></i>
+                            Tel: <a href="tel:+<%= info[:phone][:number] %>">
+                                <%= info[:phone][:display] %>
+                            </a>
+                        </p>
+                        
+                        <p>
+                            <i class="fa-solid <%= info[:email][:icon] %>"></i>
+                            <a href="mailto:<%= info[:email][:address] %>">
+                                <%= info[:email][:address] %>
+                            </a>
+                        </p>
+                        
+                        <p class="office-hours">
+                            <i class="fa-solid <%= info[:hours][:icon] %>"></i>
+                            <strong><%= info[:hours][:label] %></strong><br>
+                            <%= info[:hours][:text] %>
+                        </p>
+                    </div>
+                    
+                <% when 'projects' %>
+                    <ul class="projects-list">
+                        <% section[:content].each do |project| %>
+                            <li>
+                                <span class="project-name"><%= project[:name] %></span>
+                                <% if project[:date] %>
+                                    <span class="project-date">(<%= project[:date] %>)</span>
+                                <% end %>
+                            </li>
+                        <% end %>
+                    </ul>
+                <% end %>
+            </div>
+        <% end %>
     </div>
+    
     <div class="footer-bottom">
-       <div class="empt">
-       &nbsp;
-       </div>
-        <a href="">Copyright © 2024 ECOHYGIENE, All Rights Reserved.</a>
         <div class="empt">
-        &nbsp;
+            &nbsp;
+        </div>
+        
+        <%= link_to copyright_info[:text], 
+                    copyright_info[:link], 
+                    class: "copyright" %>
+        
+        <div class="empt">
+            &nbsp;
         </div>
     </div>
 </footer>
