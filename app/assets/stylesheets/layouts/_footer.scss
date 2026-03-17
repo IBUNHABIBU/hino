@@ -71,7 +71,7 @@ footer {
             
             i {
                 color: $secondary-color;
-                width: 1.5rem;
+                width: 1.2rem;
                 margin-right: 0.5rem;
             }
             
@@ -223,7 +223,7 @@ footer {
                 transition: color 0.3s ease;
 
                 @include respond(phone) {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
                 
                 &:hover {
