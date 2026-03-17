@@ -11,6 +11,10 @@ footer {
     background-color: $main-color;
     color: #fff;
     padding: 30px;
+
+    @include respond(phone) {
+        padding: 15px; // Reduce overall padding on mobile
+    }
 }
 
 .footer-content {
@@ -24,6 +28,13 @@ footer {
     margin-right: 2rem;
     margin-bottom: 3rem;
 
+     @include respond(phone) {
+        margin-right: 0;        // Remove right margin
+        margin-bottom: 1.5rem;  // Reduce bottom margin from 3rem to 1.5rem
+        flex: 1 1 100%;         // Full width
+        width: 100%;
+    }
+
     // Quick Links Styling
     .quick-links {
         list-style: none;
@@ -32,6 +43,10 @@ footer {
         
         li {
             margin-bottom: 0.8rem;
+
+            @include respond(phone) {
+                margin-bottom: 0.5rem; // Reduce gap between links
+            }
             
             .footer-link {
                 color: #fff;
