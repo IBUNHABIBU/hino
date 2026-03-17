@@ -6,6 +6,7 @@ footer {
         color: $secondary-color;
     }
 }
+
 .interesting-infos {
     background-color: $main-color;
     color: #fff;
@@ -22,6 +23,111 @@ footer {
     flex: 1 1 200px;
     margin-right: 2rem;
     margin-bottom: 3rem;
+
+    // Quick Links Styling
+    .quick-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            margin-bottom: 0.8rem;
+            
+            .footer-link {
+                color: #fff;
+                text-decoration: none;
+                font-size: $font-size-xs;
+                transition: all 0.3s ease;
+                position: relative;
+                padding-left: 1.2rem;
+                
+                &::before {
+                    content: "›";
+                    position: absolute;
+                    left: 0;
+                    color: $secondary-color;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+                }
+                
+                &:hover {
+                    color: $color-tertiary;
+                    padding-left: 1.5rem;
+                    
+                    &::before {
+                        transform: translateX(3px);
+                    }
+                }
+            }
+        }
+    }
+
+    // Address section styling to match your design
+    .footer-address {
+        p {
+            font-size: $font-size-xs;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            
+            i {
+                color: $secondary-color;
+                width: 1.5rem;
+                margin-right: 0.5rem;
+            }
+            
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                
+                &:hover {
+                    color: $color-tertiary;
+                }
+            }
+        }
+        
+        .office-hours {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            
+            strong {
+                color: $secondary-color;
+                display: block;
+                margin-bottom: 0.3rem;
+                font-size: $font-size-xs;
+            }
+        }
+    }
+
+    // Projects list styling
+    .projects-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+            font-size: $font-size-xs;
+            
+            &::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: $secondary-color;
+                font-size: 1.2rem;
+            }
+            
+            .project-date {
+                color: $secondary-color;
+                font-size: 0.75rem;
+                margin-left: 0.3rem;
+            }
+        }
+    }
 }
 
 .footer-section h3 {
@@ -39,7 +145,6 @@ footer {
     font-size: $font-size-xs;
 }
 
-
 .footer-section p {
     font-size: $font-size-xs;
 }
@@ -53,17 +158,31 @@ footer {
     border-bottom: 1px solid hsla(148, 94%, 62%, 0.867);
     margin-bottom: 4rem;
     padding: 2rem;
-
     background-image: linear-gradient(to right, $color-tertiary 50%, transparent 50%);
-    background-size: 140% 0.4rem; /* Adjust the thickness of the underline */
-    background-position: 100% 100%; /* Align the underline to the bottom */
+    background-size: 140% 0.4rem;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
+
+    .logo {
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    }
 
     .social {
         display: flex;
         gap: 1rem;
 
-        .fa-facebook, .fa-twitter {
+        a {
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+
+        .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram {
             color: #fff;
             font-size: 1.5rem;
 
@@ -72,33 +191,46 @@ footer {
             }
         }
     }
+    
     .contact {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        // flex-wrap: wrap;
         gap: 1rem;
 
-     .fa-message {
-        font-size: 1.5rem;
-        border-radius: 50%;
-        padding: 1rem;
-        border: 0.2rem solid $color-tertiary;
-     }
-
-     span {
-        font-size: 1rem;
-
-        a {
-            color: $color-tertiary;
-            font-size: 2rem;
-
-            @include respond(phone) {
-                font-size: 1rem;
+        .fa-message {
+            font-size: 1.5rem;
+            border-radius: 50%;
+            padding: 1rem;
+            border: 0.2rem solid $color-tertiary;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: $color-tertiary;
+                color: $main-color;
             }
         }
-     }
 
+        span {
+            font-size: 1rem;
+            line-height: 1.4;
+
+            a {
+                color: $color-tertiary;
+                font-size: 2rem;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+
+                @include respond(phone) {
+                    font-size: 1.5rem;
+                }
+                
+                &:hover {
+                    color: lighten($color-tertiary, 10%);
+                }
+            }
+        }
     }
 }
 
@@ -106,14 +238,74 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
 
     .empt {
         height: 1px;
         width: 40%;
         background-color: rgba(255, 255, 255, 0.523);
     }
-    a {
+    
+    .copyright {
         color: $color-tertiary;
         font-size: 0.7rem;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: lighten($color-tertiary, 10%);
+            text-decoration: underline;
+        }
+    }
+}
+
+// Responsive adjustments
+@include respond(phone) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        
+        .contact {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        width: 100%;
+        
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            
+            li {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        
+        .empt {
+            width: 100%;
+        }
+    }
+}
+
+@include respond(tab-port) {
+    .footer-content {
+        gap: 2rem;
+    }
+    
+    .footer-section {
+        flex: 1 1 300px;
     }
 }

@@ -40,51 +40,7 @@ module NavHelper
   # ... existing nav_menu_items and other methods ...
 
   # Quick Links for Footer
-  def quick_links
-    [
-      { name: 'Home', path: 'root_path' },
-      { name: 'Services', path: 'ourservices_path' },
-      { name: 'Company', path: 'about_us_path' },
-      { name: 'Contact Us', path: 'contact_us_path' },
-    ]
-  end
-
-  # Footer Contact Information
-  def footer_contact_info
-    {
-      address: {
-        icon: 'fa-location-dot',
-        line1: 'Sido Shinyanga, Tabora Road',
-        line2: 'Ibinzamata Area, Plot no. 2, Block Y',
-        line3: 'P. O. BOX 8804, Shinyanga'
-      },
-      phone: {
-        icon: 'fa-phone-volume',
-        number: '+255 685325766',
-        display: '0685325766'
-      },
-      email: {
-        icon: 'fa-envelope',
-        address: 'directors@ecohygiene.co.tz'
-      },
-      hours: {
-        icon: 'fa-clock',
-        text: '24/7',
-        label: 'OFFICE HOURS'
-      }
-    }
-  end
-
-  # Latest Projects
-  def latest_projects
-    [
-      { name: 'Opening of new mixing setup at Shinyanga region', date: '2024' },
-      # Add more projects here as they come
-    ]
-  end
-
-  # Footer Sections Configuration
-  def footer_sections
+   def footer_sections
     [
       {
         title: 'INTERESTING INFOS',
@@ -92,7 +48,7 @@ module NavHelper
         content: 'We seek to survive market conditions and contribute immensely to the economic growth of the country.'
       },
       {
-        title: 'QUICK LINKS',
+        title: 'QUICK LINKS',  # Added QUICK LINKS section
         type: 'links',
         content: quick_links
       },
@@ -107,6 +63,42 @@ module NavHelper
         content: latest_projects
       }
     ]
+  end
+
+  # Update quick_links to match your routes
+  def quick_links
+    [
+      { name: 'Home', path: 'root_path' },
+      { name: 'Services', path: 'ourservices_path' },
+      { name: 'Company', path: 'about_us_path' },
+      { name: 'Contact Us', path: 'contact_us_path' },
+    ]
+  end
+
+  # Update footer_contact_info to match your styling
+  def footer_contact_info
+    {
+      address: {
+        icon: 'fa-location-dot',
+        line1: 'Sido Shinyanga, Tabora Road',
+        line2: 'Ibinzamata Area, Plot no. 2, Block Y',
+        line3: 'P. O. BOX 8804, Shinyanga'
+      },
+      phone: {
+        icon: 'fa-phone-volume',
+        number: '255685325766',
+        display: '0685325766'
+      },
+      email: {
+        icon: 'fa-envelope',
+        address: 'directors@ecohygiene.co.tz'
+      },
+      hours: {
+        icon: 'fa-clock',
+        text: '24/7',
+        label: 'OFFICE HOURS'
+      }
+    }
   end
 
   # Footer Social Links
@@ -125,5 +117,14 @@ module NavHelper
       text: 'Copyright © 2024 ECOHYGIENE, All Rights Reserved.',
       link: '#'
     }
+  end
+
+  def latest_projects
+    [
+      { name: 'Opening of new mixing setup at Shinyanga region', date: '2024' },
+      # Add more projects here as they become available
+      # { name: 'Project 2', date: '2024' },
+      # { name: 'Project 3', date: '2023' }
+    ]
   end
 end
