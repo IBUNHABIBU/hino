@@ -1,19 +1,18 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="humburger"
+// data-controller="hamburger"
 export default class extends Controller {
-  static targets = [".btn-mobile-nav", "header__menu__item"]
+  static targets = ["menu"]
+
   connect() {
-    this.toggle();
-    this.removenav();
-    console.log("humberger")
+    console.log("hamburger connected")
   }
 
   toggle() {
-    this.element.classList.toggle("nav-open");
+    this.menuTarget.classList.toggle("nav-open")
   }
 
-  removenav() {
-    this.element.classList.toggle("nav-open");
+  close() {
+    this.menuTarget.classList.remove("nav-open")
   }
 }
