@@ -6,6 +6,7 @@ export default class extends Controller {
   connect() {
     this.toggle();
     this.removenav();
+    console.log("humberger")
   }
 
   toggle() {
