@@ -4,4 +4,4 @@ import "controllers"
 import "trix"
 import "@rails/actiontext"
 
-console.log("Application root is working")
+console.log("javascript/application.js is working")

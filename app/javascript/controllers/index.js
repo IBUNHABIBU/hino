@@ -1,6 +1,7 @@
-import { application } from "./application"
+// app/javascript/controllers/index.js
+import { application } from "controllers/application"
 import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
 
 eagerLoadControllersFrom("controllers", application)
 
-console.log("Index")
+console.log("Index loaded with controllers")

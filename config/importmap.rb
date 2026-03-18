@@ -15,3 +15,5 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 # Pin third-party libraries (examples)
 # pin "chart.js", to: "https://ga.jspm.io/npm:chart.js@4.4.1/dist/chart.js"
 # pin "lodash", to: "https://ga.jspm.io/npm:lodash@4.17.21/lodash.js"
+pin "trix"
+pin "@rails/actiontext", to: "actiontext.js"

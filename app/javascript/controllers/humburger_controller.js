@@ -6,6 +6,8 @@ export default class extends Controller {
 
   connect() {
     console.log("hamburger connected")
+    this.toggle();
+    this.close();
   }
 
   toggle() {
