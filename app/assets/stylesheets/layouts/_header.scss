@@ -250,13 +250,22 @@
   transform: translateX(0);
 }
 
-.nav-open .fa-xmark {
+.nav-open {
+  .fa-bars {
+    display: none;
+  }
+  
+  .fa-xmark {
     display: block;
     margin-left: 2rem;
-}
-
-.nav-open .fa-bars {
-    display: none;
+  }
+  
+  .header__menu {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
 }
 
 .fa-xmark, .fa-bars {
