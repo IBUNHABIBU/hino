@@ -270,6 +270,8 @@
 
 .fa-xmark, .fa-bars {
     color: #555;
+    font-size: 2rem;
+    transition: all 0.3s ease;
 }
 
 .fa-xmark {
@@ -291,6 +293,16 @@ nav {
 
     &:hover {
         color: $secondary-color;
+    }
+}
+
+.header-container.nav-open {
+    .fa-bars {
+        display: none;
+    }
+    
+    .fa-xmark {
+        display: block;
     }
 }
 
