@@ -77,8 +77,8 @@ config.action_mailer.smtp_settings = {
   address:              "smtp.gmail.com",
   port:                 587,
   domain:               "ecohygiene.site",
-  user_name:            ENV["SMTP_USERNAME"], # better to store in credentials or env vars
-  password:             ENV["SMTP_PASSWORD"],
+  # user_name:            ENV["SMTP_USERNAME"], # better to store in credentials or env vars
+  # password:             ENV["SMTP_PASSWORD"],
   authentication:       "plain",
   enable_starttls_auto: true
 }
